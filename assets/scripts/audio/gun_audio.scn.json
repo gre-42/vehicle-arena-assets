@@ -1,0 +1,22 @@
+[
+  {
+    "required": "(%flavor == 'extended')",
+    "call": "add_audio",
+    "arguments": {
+      "name": "pistol.shot",
+      "filename": "file://sounds/opengameart/chaingun-pistol-rifle-shotgun-shots/pistol.mp3",
+      "gain": 1,
+      "distance_clamping": [5, 700]
+    }
+  },
+  {
+    "required": "(%flavor == 'extended')",
+    "call": "add_audio",
+    "arguments": {
+      "name": "cg1.shot",
+      "filename": "file://sounds/opengameart/chaingun-pistol-rifle-shotgun-shots/cg1.mp3",
+      "gain": 1,
+      "distance_clamping": [5, 700]
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  { "path": "sounds/opengameart/thruster/space_ship.wav", "audio": { "format": "MP3", "bitrate": 160 } },
+  { "path": "sounds/opengameart/explosions/explodemini_fast.wav", "audio": { "format": "MP3", "bitrate": 160 } },
+  { "path": "sounds/opengameart/break-crunch-impacts/impactcrunch01.wav", "audio": { "format": "MP3", "bitrate": 160 } },
+  { "path": "sounds/opengameart/chaingun-pistol-rifle-shotgun-shots/pistol.wav", "audio": { "format": "MP3", "bitrate": 160 } },
+  { "path": "sounds/opengameart/chaingun-pistol-rifle-shotgun-shots/cg1.wav", "audio": { "format": "MP3", "bitrate": 160 } },
+  { "path": "sounds/opengameart/foot-walking-step", "glob": "\\.wav$", "audio": { "format": "MP3", "bitrate": 160 } },
+  { "path": "models/M4A1/m4a1_d36d.obj", "gzip": {} },
+  { "path": "models/opengameart/textured-pistol/pistol.obj", "gzip": {} },
+  { "path": "models/sketchfab.com/frag_grenade/frag_grenade.obj", "gzip": {} },
+  { "path": "models/sketchfab.com/m72-law-rocket-launcher/m72-law-rocket-launcher.obj", "gzip": {} },
+  { "path": "models/sketchfab.com/m72-law-rocket-launcher/m72-law-rocket-launcher-rocket.obj", "gzip": {} },
+  { "path": "models/bullet.obj", "gzip": {} },
+  { "path": "textures/trails", "glob": "\\.png$", "copy": {} },
+  { "path": "models/sketchfab.com/AH-64-apache", "glob": "\\.obj$", "gzip": {} }
+]
