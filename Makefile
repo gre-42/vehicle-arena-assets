@@ -10,6 +10,19 @@ ASSET_DIRS ?= assets
 COMPRESS_FLAGS ?=
 COMPRESS_CONFIG ?= assets/compression.json
 RUN_ARGS ?=
+REMOTE_ARGS = $(shell                          \
+    if [ "$(REMOTE_ROLE)" = server ]; then     \
+        echo --remote_site_id 42               \
+         --remote_role server                  \
+         --remote_ip 127.0.0.1                 \
+         --remote_port 8042;                   \
+    elif [ "$(REMOTE_ROLE)" = client ]; then   \
+        echo --remote_site_id 43               \
+         --remote_role client                  \
+         --remote_ip 127.0.0.1                 \
+         --remote_port 8042;                   \
+    fi                                         \
+    )
 
 build:
 	make build -C $(SOURCE_DIR)/VehicleArena CMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
@@ -28,7 +41,7 @@ run:
 		--show_mouse_cursor \
 		--windowed_width 1500 \
 		--windowed_height 900 \
-		--check_gl_errors $(RUN_ARGS)
+		--check_gl_errors $(REMOTE_ARGS) $(RUN_ARGS)
 
 run_dev: build
 	ENABLE_OSM_MAP_CACHE=0 \
@@ -43,7 +56,7 @@ run_dev: build
 		--windowed_width 1500 \
 		--windowed_height 900 \
 		--devel_mode \
-		--check_gl_errors $(RUN_ARGS)
+		--check_gl_errors $(REMOTE_ARGS) $(RUN_ARGS)
 
 run_tsan:
 	OMP_NUM_THREADS=1 \
@@ -58,7 +71,8 @@ run_tsan:
 		--show_mouse_cursor \
 		--windowed_width 1500 \
 		--windowed_height 900 \
-		--devel_mode $(RUN_ARGS)
+		--devel_mode \
+		--check_gl_errors $(REMOTE_ARGS) $(RUN_ARGS)
 
 test: build run
 
