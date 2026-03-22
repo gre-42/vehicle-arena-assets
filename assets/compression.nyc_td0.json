@@ -1,0 +1,11 @@
+[
+  { "path": "levels/nyc_td0/create_tripod_cameras_nyc_td0.scn.json", "copy": {} },
+  { "path": "levels/nyc_td0/icon.png", "copy": {} },
+  { "path": "levels/nyc_td0/manifest_nyc_td0.json", "sed": { "substitute": [
+    ["\\$__DIR__", "file://$__DIR__"],
+    ["\"level_icon_file\": \"", "\"level_icon_file\": \"file://"]]} },
+  { "path": "levels/nyc_td0/map_nyc_td0.osm", "gzip": {} },
+  { "path": "levels/nyc_td0/players.json", "copy": {} },
+  { "path": "levels/nyc_td0/scene_nyc_td0.scn.json", "sed": { "substitute": [
+    ["\\$__DIR__", "file://$__DIR__"]] } }
+]

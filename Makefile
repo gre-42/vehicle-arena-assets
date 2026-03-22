@@ -8,7 +8,11 @@ SOURCE_DIRS ?= ../MGame_Github/data;../MGame_Extra
 DEST_DATA_DIR ?= /tmp/compressed
 ASSET_DIRS ?= assets
 COMPRESS_FLAGS ?=
-COMPRESS_CONFIG ?= assets/compression.json
+COMPRESS_CONFIGS ?= $(shell echo "		\
+assets/compression.json;				\
+assets/compression.race_track0.json;	\
+assets/compression.nyc.json;			\
+assets/compression.nyc_td0.json" | sed "s/ //g")
 RUN_ARGS ?=
 REMOTE_ARGS = $(shell                          \
     if [ "$(REMOTE_ROLE)" = server ]; then     \
@@ -77,4 +81,4 @@ run_tsan:
 test: build run
 
 compress_to_tmp: build
-	"$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --config "$(COMPRESS_CONFIG)"
+	"$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --configs "$(COMPRESS_CONFIGS)"

@@ -1,0 +1,27 @@
+[
+  { "path": "levels/nyc/osm_resource_nyc.scn.json", "sed": { "substitute": [
+    ["heightmap.pgm", "heightmap.png"],
+    ["\\$__DIR__", "file://$__DIR__"],
+    ["\\$__APPDATA__", "file://$__APPDATA__"],
+    ["map_nyc.osm", "map_nyc.osm.gz"],
+    ["textures/", "file://textures/"],
+    ["\"Ground037_Sl\"", "\"Ground037_dark27\""],
+    ["\"ground\"", "\"#ground\""],
+    ["\"window\"", "\"#window\""],
+    ["\"wall_facade_plaster_white_Base\"", "\"#wall_facade_plaster_white_Base\""],
+    ["\"concrete1_2K_wh_Detail\"", "\"#concrete1_2K_wh_Detail\""],
+    ["\"wall_facade_bricks_red_Base\"", "\"#wall_facade_bricks_red_Base\""],
+    ["\"Plaster003_Base\"", "\"#Plaster003_Base\""],
+    ["\"Plaster003_Gray_Base\"", "\"#Plaster003_Gray_Base\""],
+    ["\"DE21F2_industryWindow00001_512_specular\"", "\"#DE21F2_industryWindow00001_512_specular\""],
+    ["\"wall_facade_plaster_orange_Base\"", "\"#wall_facade_plaster_orange_Base\""],
+    ["\"MarekWindow00001_512_Base\"", "\"#MarekWindow00001_512_Base\""],
+    ["\"left\": \"", "\"left\": \"#"],
+    ["\"right\": \"", "\"right\": \"#"],
+    ["\"floor\": \"", "\"floor\": \"#"],
+    ["\"ceiling\": \"", "\"ceiling\": \"#"],
+    ["\"back\": \"", "\"back\": \"#"],
+    ["\"front_specular\": \"", "\"front_specular\": \"#"],
+    ["\\btrashcan1\\b", "trashcan_yethiel"]] } },
+  { "path": "levels/nyc/heightmap.pgm", "resize": { "size": [0, 0], "periodic": false, "file_extension": ".png" } }
+]

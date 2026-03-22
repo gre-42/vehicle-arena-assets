@@ -22,10 +22,10 @@
     }
   },
   {
-    "required": "(%flavor == 'extended')",
+    "required": ["(%flavor == 'extended')", "%false"],
     "call": "save_texture_array_png",
     "arguments": {
-      "name": "bullet_impact_red_3d",
+      "name": "#bullet_impact_red_3d",
       "filename_prefix": "/tmp/textures_",
       "color_mode": "rgba"
     }
