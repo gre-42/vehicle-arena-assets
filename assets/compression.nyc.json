@@ -1,4 +1,5 @@
 [
+  { "path": "levels/nyc/map_nyc.osm", "gzip": {} },
   { "path": "levels/nyc/osm_resource_nyc.scn.json", "sed": { "substitute": [
     ["heightmap.pgm", "heightmap.png"],
     ["\\$__DIR__", "file://$__DIR__"],

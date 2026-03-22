@@ -82,7 +82,7 @@
       "color_mode": "rgba",
       "wrap_mode_s": "clamp_to_edge",
       "wrap_mode_t": "clamp_to_edge",
-      "depth_interpolation": "linear",
+      "depth_interpolation": "nearest",
       "mipmap_mode": "with_mipmaps",
       "mip_level_count": 8,
       "anisotropic_filtering_level": 16,

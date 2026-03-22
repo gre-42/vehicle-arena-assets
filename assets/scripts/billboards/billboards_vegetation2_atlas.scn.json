@@ -30,7 +30,7 @@
     }
   },
   {
-    "call": "add_texture_atlas_cpu",
+    "call": "add_texture_atlas_gpu",
     "arguments": {
       "name": "vegetation2",
       "width": 4096,
@@ -38,19 +38,22 @@
       "color_mode": "rgba",
       "wrap_mode_s": "clamp_to_edge",
       "wrap_mode_t": "clamp_to_edge",
+      "depth_interpolation": "nearest",
+      "mipmap_mode": "with_mipmaps",
+      "mip_level_count": 8,
       "anisotropic_filtering_level": 16,
-      "images": [
-        {"target_position": [0, 0], "texture": "#TexturesCom_Trees0129_1_masked_S_5x1k"},
-        {"target_position": [512, 0], "texture": "#TexturesCom_Trees0130_1_masked_S_5x1k"},
-        {"target_position": [1024, 0], "texture": "#TexturesCom_Trees0131_1_masked_S_5x1k"},
-        {"target_position": [1536, 0], "texture": "#Trees0058_2"},
-        {"target_position": [0, 1024], "texture": "#Trees0058_3"},
-        {"target_position": [1024, 1024], "texture": "#Trees0122_1"},
-        {"target_position": [3072, 0], "texture": "#hedge_long_0"},
-        {"target_position": [3584, 0], "texture": "#hedge_long_round_0"},
-        {"target_position": [3072, 1024], "texture": "#hedge_small_0"},
-        {"target_position": [3584, 1024], "texture": "#hedge_small_round_0"}
-      ]
+      "images": [[
+        {"left":    0, "bottom":    0, "width":  512, "height": 1024, "texture": "#TexturesCom_Trees0129_1_masked_S_5x1k"},
+        {"left":  512, "bottom":    0, "width":  512, "height": 1024, "texture": "#TexturesCom_Trees0130_1_masked_S_5x1k"},
+        {"left": 1024, "bottom":    0, "width":  512, "height": 1024, "texture": "#TexturesCom_Trees0131_1_masked_S_5x1k"},
+        {"left": 1536, "bottom":    0, "width": 1024, "height": 1024, "texture": "#Trees0058_2"},
+        {"left":    0, "bottom": 1024, "width": 1024, "height": 1024, "texture": "#Trees0058_3"},
+        {"left": 1024, "bottom": 1024, "width": 1024, "height": 1024, "texture": "#Trees0122_1"},
+        {"left": 3072, "bottom":    0, "width":  512, "height": 1024, "texture": "#hedge_long_billboard"},
+        {"left": 3584, "bottom":    0, "width":  512, "height": 1024, "texture": "#hedge_long_round_billboard"},
+        {"left": 3072, "bottom": 1024, "width":  512, "height": 1024, "texture": "#hedge_small_billboard"},
+        {"left": 3584, "bottom": 1024, "width":  512, "height": 1024, "texture": "#hedge_small_round_billboard"}
+      ]]
     }
   },
   {

@@ -1029,13 +1029,18 @@
   { "path": "models/gre42/ship0/ship0.obj", "gzip": {} },
   { "path": "models/opengameart/crate-2/Crate.mtl", "gzip": {} },
   { "path": "models/opengameart/crate-2/Crate.obj", "gzip": {} },
-  { "path": "models/opengameart/Hedge/Long/HedgeLongExp.mtl", "gzip": {} },
+  { "path": "models/opengameart/Hedge", "glob": "\\b(diffuse|normal).tga", "resize": { "size": [256, 256], "periodic": false, "file_extension": ".png" } },
+  { "path": "models/opengameart/Hedge/Long/HedgeLongExp.mtl", "sed": {
+    "substitute": [["diffuse.tga", "diffuse.png"], ["normal.tga", "normal.png"]], "gzip": true } },
   { "path": "models/opengameart/Hedge/Long/HedgeLongExp.obj", "gzip": {} },
-  { "path": "models/opengameart/Hedge/Small/HedgeSmallExp.mtl", "gzip": {} },
+  { "path": "models/opengameart/Hedge/Small/HedgeSmallExp.mtl", "sed": {
+    "substitute": [["diffuse.tga", "diffuse.png"], ["normal.tga", "normal.png"]], "gzip": true } },
   { "path": "models/opengameart/Hedge/Small/HedgeSmallExp.obj", "gzip": {} },
-  { "path": "models/opengameart/Hedge/LongRound/HedgeLongRoundExp.mtl", "gzip": {} },
+  { "path": "models/opengameart/Hedge/LongRound/HedgeLongRoundExp.mtl", "sed": {
+    "substitute": [["diffuse.tga", "diffuse.png"], ["normal.tga", "normal.png"]], "gzip": true } },
   { "path": "models/opengameart/Hedge/LongRound/HedgeLongRoundExp.obj", "gzip": {} },
-  { "path": "models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.mtl", "gzip": {} },
+  { "path": "models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.mtl", "sed": {
+    "substitute": [["diffuse.tga", "diffuse.png"], ["normal.tga", "normal.png"]], "gzip": true } },
   { "path": "models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.obj", "gzip": {} },
   { "path": "models/opengameart/Facade/entrance0.mtl", "gzip": {} },
   { "path": "models/opengameart/Facade/entrance0.obj", "gzip": {} },

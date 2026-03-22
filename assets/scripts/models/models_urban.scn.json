@@ -723,39 +723,59 @@
     }
   },
   {
-    "declare_macro": "load_hedge",
-    "content": {
-      "call": "obj_resource",
-      "arguments": {
-        "name": "%name",
-        "filename": "%filename",
-        "config": {
-          "position": [0, 0, 0],
-          "rotation": [0, 0, 0],
-          "scale": [0.1, 0.1, 0.1],
-          "center_distances": [0, 501],
-          "blend_mode": "binary_05",
-          "alpha_distances": [0, 0, "inf", "inf"],
-          "cull_faces_alpha": false,
-          "occluded_pass": "lightmap_black_node",
-          "occluder_pass": "none",
-          "aggregate_mode": "instances_sorted",
-          "transformation_mode": "position_yangle",
-          "emissive_factor": "%vanilla_rally_emissive_factor",
-          "ambient_factor": "%vanilla_rally_ambient_factor",
-          "diffuse_factor": "%vanilla_rally_diffuse_factor",
-          "specular_factor": "%vanilla_rally_specular_factor",
-          "shading": {
-            "fog_distances": "%fog_distances",
-            "fog_ambient": "%fog_ambient"
+    "declare_macro": "_load_hedge",
+    "content": [
+      {
+        "call": "obj_resource",
+        "arguments": {
+          "name": "%name",
+          "filename": "%filename",
+          "config": {
+            "position": [0, 0, 0],
+            "rotation": [0, 0, 0],
+            "scale": [0.1, 0.1, 0.1],
+            "center_distances": [0, 501],
+            "blend_mode": "binary_05",
+            "alpha_distances": [0, 0, "inf", "inf"],
+            "cull_faces_alpha": false,
+            "occluded_pass": "lightmap_black_node",
+            "occluder_pass": "none",
+            "aggregate_mode": "instances_sorted",
+            "transformation_mode": "position_yangle",
+            "emissive_factor": "%vanilla_rally_emissive_factor",
+            "ambient_factor": "%vanilla_rally_ambient_factor",
+            "diffuse_factor": "%vanilla_rally_diffuse_factor",
+            "specular_factor": "%vanilla_rally_specular_factor",
+            "shading": {
+              "fog_distances": "%fog_distances",
+              "fog_ambient": "%fog_ambient"
+            },
+            "physics_material": "attr_visible"
+          }
+        }
+      },
+      {
+        "call": "render_resource_to_textures",
+        "arguments": {
+          "resource": "%name",
+          "color_texture_name": "$name-_billboard",
+          "ortho_camera_config": {
+            "near_plane": -2,
+            "far_plane": 2,
+            "left_plane": -1.5,
+            "right_plane": 1.5,
+            "bottom_plane": 0,
+            "top_plane": 6
           },
-          "physics_material": "attr_visible"
+          "texture_size": [1024, 1024],
+          "nsamples_msaa": 4,
+          "dpi": 96
         }
       }
-    }
+    ]
   },
   {
-    "declare_macro": "load_facade",
+    "declare_macro": "_load_facade",
     "content": {
       "call": "obj_resource",
       "arguments": {
@@ -788,45 +808,45 @@
   {
     "execute": [
       {
-        "playback": "load_hedge",
+        "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_long",
           "filename": "file://models/opengameart/Hedge/Long/HedgeLongExp.obj.gz"
         }
       },
       {
-        "playback": "load_hedge",
+        "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_small",
           "filename": "file://models/opengameart/Hedge/Small/HedgeSmallExp.obj.gz"
         }
       },
       {
-        "playback": "load_hedge",
+        "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_long_round",
           "filename": "file://models/opengameart/Hedge/LongRound/HedgeLongRoundExp.obj.gz"
         }
       },
       {
-        "playback": "load_hedge",
+        "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_small_round",
           "filename": "file://models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.obj.gz"
         }
       },
-      { "playback": "load_facade", "arguments": { "name": "entrance0" } },
-      { "playback": "load_facade", "arguments": { "name": "entrance1" } },
+      { "playback": "_load_facade", "arguments": { "name": "entrance0" } },
+      { "playback": "_load_facade", "arguments": { "name": "entrance1" } },
 
-      { "playback": "load_facade", "arguments": { "name": "sign0" } },
-      { "playback": "load_facade", "arguments": { "name": "sign1" } },
-      { "playback": "load_facade", "arguments": { "name": "sign2" } },
-      { "playback": "load_facade", "arguments": { "name": "sign3" } },
-      { "playback": "load_facade", "arguments": { "name": "sign4" } },
-      { "playback": "load_facade", "arguments": { "name": "sign5" } },
+      { "playback": "_load_facade", "arguments": { "name": "sign0" } },
+      { "playback": "_load_facade", "arguments": { "name": "sign1" } },
+      { "playback": "_load_facade", "arguments": { "name": "sign2" } },
+      { "playback": "_load_facade", "arguments": { "name": "sign3" } },
+      { "playback": "_load_facade", "arguments": { "name": "sign4" } },
+      { "playback": "_load_facade", "arguments": { "name": "sign5" } },
 
-      { "playback": "load_facade", "arguments": { "name": "door0" } },
-      { "playback": "load_facade", "arguments": { "name": "door1" } }
+      { "playback": "_load_facade", "arguments": { "name": "door0" } },
+      { "playback": "_load_facade", "arguments": { "name": "door1" } }
     ]
   }
 ]
