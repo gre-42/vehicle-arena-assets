@@ -65,6 +65,14 @@
     }
   },
   {
+    "call": "add_texture_descriptor",
+    "arguments": {
+      "name": "trails_white",
+      "color": "#trails_white",
+      "add_colormap": false
+    }
+  },
+  {
     "call": "add_texture_atlas_cpu",
     "arguments": {
       "name": "trails_red",
@@ -82,6 +90,14 @@
         {"target_position": [0, 0], "target_layer": 1, "texture": "#simple_trails_a40_red"},
         {"target_position": [0, 0], "target_layer": 2, "texture": "#simple_trails_a1_red"}
       ]
+    }
+  },
+  {
+    "call": "add_texture_descriptor",
+    "arguments": {
+      "name": "trails_red",
+      "color": "#trails_red",
+      "add_colormap": false
     }
   },
   {
