@@ -16,6 +16,14 @@
     }
   },
   {
+    "call": "add_texture_descriptor",
+    "arguments": {
+      "name": "sea_spray0",
+      "color": "#sea_spray0",
+      "add_colormap": false
+    }
+  },
+  {
     "comment": {
       "call": "save_texture_array_png",
       "arguments": {

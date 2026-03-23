@@ -807,7 +807,8 @@
     "glob": "\\.jpg$",
     "luma_chrominance": {
       "luma": [0, 0],
-      "chrominance": [64, 64]
+      "chrominance": [64, 64],
+      "file_extension": ".png"
     }
   },
   {
@@ -815,7 +816,8 @@
     "glob": "\\.jpg$",
     "luma_chrominance": {
       "luma": [0, 0],
-      "chrominance": [64, 64]
+      "chrominance": [64, 64],
+      "file_extension": ".png"
     }
   },
   {
@@ -1043,6 +1045,9 @@
   { "path": "models/opengameart/Stone_model_tex/stone.obj", "gzip": {} },
   { "path": "models/opengameart/Stone_model_tex/stone_d1.obj", "gzip": {} },
   { "path": "models/opengameart/Stone_model_tex/stone_d4.obj", "gzip": {} },
+  { "path": "models/opengameart/desert_rock01/rock_diffuse.png", "resize": { "size": [256, 256], "periodic": false } },
+  { "path": "models/opengameart/desert_rock01/rocktest_normal.png", "resize": { "size": [256, 256], "periodic": false } },
+  { "path": "models/opengameart/desert_rock01/rock01.mtl", "gzip": {} },
   { "path": "models/opengameart/desert_rock01/rock01_mean_d1.obj", "gzip": {} },
   { "path": "models/opengameart/desert_rock01/rock01_mean_d2.obj", "gzip": {} },
   { "path": "models/opengameart/desert_rock01/rock01_mean.obj", "gzip": {} },

@@ -5,7 +5,7 @@
     ["\\$__DIR__", "file://$__DIR__"],
     ["\\$__APPDATA__", "file://$__APPDATA__"],
     ["textures/", "file://textures/"],
-    ["\"Ground037_Sl\"", "\"Ground037_dark27\""],
+    ["\\bGround037_Sl\\b", "Ground037_dark27"],
     ["\"ground\"", "\"#ground\""],
     ["\"window\"", "\"#window\""],
     ["\"wall_facade_plaster_white_Base\"", "\"#wall_facade_plaster_white_Base\""],
