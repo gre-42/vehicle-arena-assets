@@ -4,7 +4,6 @@
     ["heightmap.pgm", "heightmap.png"],
     ["\\$__DIR__", "file://$__DIR__"],
     ["\\$__APPDATA__", "file://$__APPDATA__"],
-    ["map_nyc.osm", "map_nyc.osm.gz"],
     ["textures/", "file://textures/"],
     ["\"Ground037_Sl\"", "\"Ground037_dark27\""],
     ["\"ground\"", "\"#ground\""],

@@ -1,4 +1,5 @@
 [
+  { "path": "levels/nyc_td0/map_nyc_td0.osm", "gzip": {} },
   { "path": "levels/nyc_td0/create_tripod_cameras_nyc_td0.scn.json", "copy": {} },
   { "path": "levels/nyc_td0/icon.png", "copy": {} },
   { "path": "levels/nyc_td0/manifest_nyc_td0.json", "sed": { "substitute": [
@@ -7,5 +8,7 @@
   { "path": "levels/nyc_td0/map_nyc_td0.osm", "gzip": {} },
   { "path": "levels/nyc_td0/players.json", "copy": {} },
   { "path": "levels/nyc_td0/scene_nyc_td0.scn.json", "sed": { "substitute": [
-    ["\\$__DIR__", "file://$__DIR__"]] } }
+    ["\\$__DIR__", "file://$__DIR__"],
+    ["map_nyc.osm", "map_nyc.osm.gz"],
+    ["map_nyc_td0.osm", "map_nyc_td0.osm.gz"]] } }
 ]

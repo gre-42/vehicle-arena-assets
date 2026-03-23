@@ -231,7 +231,7 @@
       "stepsize": 100,
       "randsize": 100,
       "channels": 4,
-      "alpha": "file://../blobs/blob0_alpha.png",
+      "alpha_fac": "file://../blobs/blob0_alpha.png",
       "add": false,
       "upsampling": 1,
       "ols": true
@@ -294,6 +294,20 @@
     }
   },
   {
+    "path": "textures/cc0textures/Metal032_2K_Color.jpg",
+    "fragment": {
+      "fragment_size": [256, 256],
+      "assembled_size": [2048, 2048],
+      "stepsize": 100,
+      "randsize": 50,
+      "channels": 4,
+      "alpha": "file://../blobs/blob0_alpha.png",
+      "add": true,
+      "upsampling": 1,
+      "ols": true
+    }
+  },
+  {
     "path": "textures/cc0textures/Metal038_2K_Color.jpg",
     "fragment": {
       "fragment_size": [256, 256],
@@ -309,6 +323,20 @@
   },
   {
     "path": "textures/cc0textures/Metal038_2K_NormalGL.jpg",
+    "fragment": {
+      "fragment_size": [256, 256],
+      "assembled_size": [2048, 2048],
+      "stepsize": 100,
+      "randsize": 50,
+      "channels": 4,
+      "alpha": "file://../blobs/blob0_alpha.png",
+      "add": true,
+      "upsampling": 1,
+      "ols": true
+    }
+  },
+  {
+    "path": "textures/cc0textures/Fabric026_2K_Color.jpg",
     "fragment": {
       "fragment_size": [256, 256],
       "assembled_size": [2048, 2048],
@@ -736,7 +764,10 @@
   },
   {
     "path": "textures/osm/DE21F2_industryWindow00001_512_specular.png",
-    "luma": [0, 0]
+    "luma_chrominance": {
+      "luma": [0, 0],
+      "chrominance": [1, 1]
+    }
   },
   {
     "path": "textures/osm",
@@ -759,7 +790,10 @@
   },
   {
     "path": "textures/osm/MarekWindow00001_512_specular.png",
-    "copy": {}
+    "luma_chrominance": {
+      "luma": [0, 0],
+      "chrominance": [64, 64]
+    }
   },
   {
     "path": "textures/osm/MarekWindow00001_512.png",
@@ -973,7 +1007,6 @@
   { "path": "sounds/ange-engine-sim", "glob": "meta.json$", "sed": { "substitute": [["\\.wav", ".mp3"]] } },
   { "path": "sounds/ange-engine-sim", "glob": "loop\\.wav$", "audio": { "format": "MP3", "bitrate": 160 } },
   { "path": "models/trail_segment.obj", "gzip": {} },
-  { "path": "models/gre42/bridge_pier0/bridge_pier0.obj", "gzip": {} },
   { "path": "models/primitives/empty.obj", "copy": {} },
   { "path": "models/primitives/box.obj", "gzip": {} },
   { "path": "models/primitives/sphere.obj", "gzip": {} },
@@ -1005,6 +1038,7 @@
   { "path": "models/road/bumps_endpoint_d.obj", "gzip": {} },
   { "path": "models/road/parking_edge.plain-plain.obj", "gzip": {} },
   { "path": "models/gre42", "glob": "\\.(obj|mtl)$", "gzip": {} },
+  { "path": "models/gre42", "glob": "\\.png$", "copy": {} },
   { "path": "models/TransparentBox/tbox.obj", "gzip": {} },
   { "path": "models/opengameart/Stone_model_tex/stone.obj", "gzip": {} },
   { "path": "models/opengameart/Stone_model_tex/stone_d1.obj", "gzip": {} },
@@ -1016,16 +1050,21 @@
   { "path": "models/opengameart/Wood/fence_stick.obj", "gzip": {} },
   { "path": "models/opengameart/Dumpster/Dumpster.mtl", "gzip": {} },
   { "path": "models/opengameart/Dumpster/Dumpster.obj", "gzip": {} },
+  { "path": "models/opengameart/Dumpster/Dirty_Steel_02_UV_H_CM_1.jpg", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/opengameart/trashcan_yethiel/trashcan.mtl", "gzip": {} },
   { "path": "models/opengameart/trashcan_yethiel/trashcan.obj", "gzip": {} },
+  { "path": "models/opengameart/trashcan_yethiel", "glob": "\\.png$", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/opengameart/Trashcan2/Trashcan.mtl", "gzip": {} },
   { "path": "models/opengameart/Trashcan2/Trashcan.obj", "gzip": {} },
-  { "path": "models/opengameart/Mailbox/Mailbox.mtl", "gzip": {} },
+  { "path": "models/opengameart/Trashcan2/Texture", "glob": "\\.png$", "resize": { "size": [256, 256], "periodic": false } },
+  { "path": "models/opengameart/Mailbox/Mailbox.mtl", "sed": { "substitute": [["\\.png", ".jpg"]], "gzip": true } },
   { "path": "models/opengameart/Mailbox/Mailbox_flat.obj", "gzip": {} },
+  { "path": "models/opengameart/Mailbox/Texturen", "glob": "\\.png$", "resize": { "size": [256, 256], "periodic": false, "file_extension": ".jpg" } },
   { "path": "models/opengameart/Bench/bench.mtl", "gzip": {} },
   { "path": "models/opengameart/Bench/bench.obj", "gzip": {} },
   { "path": "models/opengameart/Table_And_Chairs/table_and_chairs.mtl", "gzip": {} },
   { "path": "models/opengameart/Table_And_Chairs/table_and_chairs.obj", "gzip": {} },
+  { "path": "models/opengameart/Table_And_Chairs/chair.png", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/gre42/ship0/ship0.obj", "gzip": {} },
   { "path": "models/opengameart/crate-2/Crate.mtl", "gzip": {} },
   { "path": "models/opengameart/crate-2/Crate.obj", "gzip": {} },
@@ -1042,34 +1081,22 @@
   { "path": "models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.mtl", "sed": {
     "substitute": [["diffuse.tga", "diffuse.png"], ["normal.tga", "normal.png"]], "gzip": true } },
   { "path": "models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/entrance0.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/entrance0.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/entrance1.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/entrance1.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign0.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign0.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign1.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign1.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign2.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign2.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign3.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign3.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign4.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign4.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign5.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/sign5.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/door0.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/door0.obj", "gzip": {} },
-  { "path": "models/opengameart/Facade/door1.mtl", "gzip": {} },
-  { "path": "models/opengameart/Facade/door1.obj", "gzip": {} },
+  { "path": "models/opengameart/Facade", "glob": "\\.obj$", "gzip": {} },
+  { "path": "models/opengameart/Facade", "glob": "\\.mtl$", "sed": {
+    "substitute": [
+      ["Fabric026_2K_Color.jpg", "Fabric026_2K_Color.tiles.json"],
+      ["Metal032_2K_Color.jpg", "Metal032_2K_Color.tiles.json"],
+      ["Metal032_2K_NormalGL.jpg", "Metal032_2K_NormalGL.tiles.json"],
+      ["Metal038_2K_Color.jpg", "Metal038_2K_Color.tiles.json"],
+      ["Metal038_2K_NormalGL.jpg", "Metal038_2K_NormalGL.tiles.json"]],
+    "gzip": true
+  } },
+  { "path": "models/opengameart/Facade", "glob": "\\b(sign\\d+).png$", "copy": {} },
   { "path": "models/deviantart.com/yughues-Free-Houseplants-356618110", "glob": "\\.obj$", "gzip": {} },
-  { "path": "models/MakeHuman/female_mh/t_pose_lowpoly.mhx2", "gzip": {} },
-  { "path": "models/MakeHuman/female_mh/t_pose_lowpoly_d1.obj", "gzip": {} },
-  { "path": "models/MakeHuman/female_mh/t_pose_lowpoly_d2.obj", "gzip": {} },
-  { "path": "models/MakeHuman/female_skirt/t_pose_lowpoly_d1.obj", "gzip": {} },
-  { "path": "models/MakeHuman/female_skirt/t_pose_lowpoly_d2.obj", "gzip": {} },
-  { "path": "models/MakeHuman/male_mh/t_pose_lowpoly_d03.obj", "gzip": {} },
-  { "path": "models/MakeHuman/male_mh/t_pose_lowpoly_d08.obj", "gzip": {} },
+  { "path": "models/MakeHuman/female_mh", "glob": "\\.(mhx2|mtl|obj)$", "gzip": {} },
+  { "path": "models/MakeHuman/female_skirt", "glob": "\\.(mhx2|mtl|obj)$", "gzip": {} },
+  { "path": "models/MakeHuman/male_mh", "glob": "\\.(mhx2|mtl|obj)$", "gzip": {} },
+  { "path": "models/MakeHuman/textures", "glob": "\\.png$", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/sketchfab.com/f-35c-lightning-ii", "glob": "\\.obj$", "gzip": {} },
   { "path": "models/sketchfab.com/trailer-with-wood-no2", "glob": "\\.obj$", "gzip": {} },
   { "path": "models/free3d.com/tiger_tank/Tiger.obj", "gzip": {} },

@@ -27,6 +27,12 @@ REMOTE_ARGS = $(shell                          \
          --remote_port 8042;                   \
     fi                                         \
     )
+GDB_ARGS = $(shell                                  \
+    if [ "$(GDB)" = 1 ]; then                       \
+        echo "gdb -ex='catch throw' -ex=r --args";  \
+    fi                                              \
+    )
+CACHE ?= 0
 
 build:
 	make build -C $(SOURCE_DIR)/VehicleArena CMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
@@ -35,8 +41,8 @@ build_asan:
 	make build_asan -C $(SOURCE_DIR)/VehicleArena CMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
 
 run:
-	ENABLE_OSM_MAP_CACHE=0 \
-	"$(BIN_DIR)/render_scene_file" \
+	ENABLE_OSM_MAP_CACHE=$(CACHE) \
+	$(GDB_ARGS) "$(BIN_DIR)/render_scene_file" \
 		"$(ASSET_DIRS)" \
 		assets/levels/main/main.scn.json \
 		--app_reldir .vehicle_arena \
@@ -45,27 +51,13 @@ run:
 		--show_mouse_cursor \
 		--windowed_width 1500 \
 		--windowed_height 900 \
-		--check_gl_errors $(REMOTE_ARGS) $(RUN_ARGS)
-
-run_dev: build
-	ENABLE_OSM_MAP_CACHE=0 \
-	gdb -ex="catch throw" --ex=r --args "$(BIN_DIR)/render_scene_file" \
-		"$(ASSET_DIRS)" \
-		assets/levels/main/main.scn.json \
-		--app_reldir .vehicle_arena \
-		--print_render_residual_time \
-		--print_physics_residual_time \
-		--nsamples_msaa 2 \
-		--show_mouse_cursor \
-		--windowed_width 1500 \
-		--windowed_height 900 \
-		--devel_mode \
 		--check_gl_errors $(REMOTE_ARGS) $(RUN_ARGS)
 
 run_tsan:
 	OMP_NUM_THREADS=1 \
 	TSAN_OPTIONS="second_deadlock_stack=1 suppressions=$(SOURCE_DIR)/suppressions.txt" \
-		"$(BIN_DIR)/render_scene_file" \
+	ENABLE_OSM_MAP_CACHE=$(CACHE) \
+		$(GDB_ARGS) "$(BIN_DIR)/render_scene_file" \
 		"$(ASSET_DIRS)" \
 		assets/levels/main/main.scn.json \
 		--app_reldir .vehicle_arena \
