@@ -2,7 +2,8 @@
 
 SOURCE_DIR ?= ../vehicle-arena
 CMAKE_BUILD_TYPE ?= RelWithDebInfo
-BIN_DIR ?= $(SOURCE_DIR)/VehicleArena/U$(CMAKE_BUILD_TYPE)/Bin
+BUILD_PREFIX ?= U
+BIN_DIR ?= $(SOURCE_DIR)/VehicleArena/$(BUILD_PREFIX)U$(CMAKE_BUILD_TYPE)/Bin
 
 SOURCE_DIRS ?= ../MGame_Github/data;../MGame_Extra
 DEST_DATA_DIR ?= /tmp/compressed
@@ -32,6 +33,26 @@ GDB_ARGS = $(shell                                  \
         echo "gdb -ex='catch throw' -ex=r --args";  \
     fi                                              \
     )
+SHOW_MOUSE_CURSOR_ARGS = $(shell         \
+    if [ "$(CURSOR)" != 0 ]; then   \
+        echo --show_mouse_cursor;   \
+    fi                              \
+    )
+PERF_ARGS = $(shell                                \
+    if [ "$(PERF)" = 1 ]; then                     \
+        echo sudo -E perf record -F 99 -a -g --;   \
+    fi                                             \
+    )
+PRINT_MATERIALS_ARGS = $(shell             \
+    if [ "$(PMAT)" = 1 ]; then             \
+        echo --print_rendered_materials;   \
+    fi                                     \
+    )
+CHK_ARGS = $(shell                         \
+    if [ "$(CHK)" = 1 ]; then              \
+        echo --check_gl_errors;            \
+    fi                                     \
+    )
 CACHE ?= 0
 
 build:
@@ -42,35 +63,37 @@ build_asan:
 
 run:
 	ENABLE_OSM_MAP_CACHE=$(CACHE) \
-	$(GDB_ARGS) "$(BIN_DIR)/render_scene_file" \
+	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/render_scene_file" \
 		"$(ASSET_DIRS)" \
 		assets/levels/main/main.scn.json \
 		--app_reldir .vehicle_arena \
 		--print_render_residual_time \
 		--nsamples_msaa 2 \
-		--show_mouse_cursor \
+		$(SHOW_MOUSE_CURSOR_ARGS) \
+		$(PRINT_MATERIALS_ARGS) \
 		--windowed_width 1500 \
 		--windowed_height 900 \
-		--check_gl_errors $(REMOTE_ARGS) $(RUN_ARGS)
+		$(CHK_ARGS) $(REMOTE_ARGS) $(RUN_ARGS)
 
 run_tsan:
 	OMP_NUM_THREADS=1 \
 	TSAN_OPTIONS="second_deadlock_stack=1 suppressions=$(SOURCE_DIR)/suppressions.txt" \
 	ENABLE_OSM_MAP_CACHE=$(CACHE) \
-		$(GDB_ARGS) "$(BIN_DIR)/render_scene_file" \
+	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/render_scene_file" \
 		"$(ASSET_DIRS)" \
 		assets/levels/main/main.scn.json \
 		--app_reldir .vehicle_arena \
 		--print_render_residual_time \
 		--print_physics_residual_time \
 		--nsamples_msaa 2 \
-		--show_mouse_cursor \
+		$(SHOW_MOUSE_CURSOR_ARGS) \
+		$(PRINT_MATERIALS_ARGS) \
 		--windowed_width 1500 \
 		--windowed_height 900 \
 		--devel_mode \
-		--check_gl_errors $(REMOTE_ARGS) $(RUN_ARGS)
+		$(CHK_ARGS) $(REMOTE_ARGS) $(RUN_ARGS)
 
 test: build run
 
 compress_to_tmp: build
-	"$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --configs "$(COMPRESS_CONFIGS)"
+	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --configs "$(COMPRESS_CONFIGS)"
