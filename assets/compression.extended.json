@@ -10,6 +10,7 @@
   { "path": "models/M4A1/rif_m4a1.png", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/opengameart/textured-pistol/pistol.mtl", "gzip": {} },
   { "path": "models/opengameart/textured-pistol/pistol.obj", "gzip": {} },
+  { "path": "models/opengameart/textured-pistol/diffuse.png", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/sketchfab.com/frag_grenade/frag_grenade.mtl", "gzip": {} },
   { "path": "models/sketchfab.com/frag_grenade/frag_grenade.obj", "gzip": {} },
   { "path": "models/sketchfab.com/frag_grenade", "glob": "\\.(jpg|png)$", "resize": { "size": [256, 256], "periodic": false } },
