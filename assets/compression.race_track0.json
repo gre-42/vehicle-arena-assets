@@ -3,7 +3,7 @@
   { "path": "levels/race_track0/manifest_race_track0.json", "sed": {
     "substitute": [["\"level_icon_file\": \"", "\"level_icon_file\": \"file://"]]
   } },
-  { "path": "levels/race_track0/create_tripod_cameras_trace_track0.scn.json", "copy": {} },
+  { "path": "levels/race_track0/create_spectator_cameras_trace_track0.scn.json", "copy": {} },
   { "path": "levels/race_track0/icon.png", "copy": {} },
   { "path": "levels/race_track0/map_race_track0.osm", "gzip": {} },
   { "path": "levels/race_track0/osm_resource_race_track0.scn.json", "sed": { "substitute": [

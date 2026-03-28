@@ -57,7 +57,7 @@
     "execute": [
       { "playback": "_add_menu_icon_subst", "arguments": { "name": "video_mode" } },
       { "playback": "_add_menu_icon_subst", "arguments": { "name": "render_fps" } },
-      { "playback": "_add_menu_icon", "arguments": { "name": "tripod" } },
+      { "playback": "_add_menu_icon", "arguments": { "name": "spectator" } },
       { "playback": "_add_menu_icon_subst", "arguments": { "name": "users" } }
     ]
   },

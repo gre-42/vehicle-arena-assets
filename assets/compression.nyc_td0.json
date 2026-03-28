@@ -1,6 +1,6 @@
 [
   { "path": "levels/nyc_td0/map_nyc_td0.osm", "gzip": {} },
-  { "path": "levels/nyc_td0/create_tripod_cameras_nyc_td0.scn.json", "copy": {} },
+  { "path": "levels/nyc_td0/create_spectator_cameras_nyc_td0.scn.json", "copy": {} },
   { "path": "levels/nyc_td0/icon.png", "copy": {} },
   { "path": "levels/nyc_td0/manifest_nyc_td0.json", "sed": { "substitute": [
     ["\\$__DIR__", "file://$__DIR__"],
