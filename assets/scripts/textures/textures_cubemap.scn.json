@@ -144,12 +144,12 @@
     "arguments": {
       "alias": "reflection_map_night",
       "filenames": [
-        "#space-skybox-0-lights",
-        "#space-skybox-0-lights",
-        "#space-skybox-0-lights",
-        "#space-skybox-0-lights",
-        "#space-skybox-0-lights",
-        "#space-skybox-0-lights"
+        "#space-skybox-0-lights/4",
+        "#space-skybox-0-lights/2",
+        "#space-skybox-0-lights/6",
+        "#space-skybox-0-lights/5",
+        "#space-skybox-0-lights/1",
+        "#space-skybox-0-lights/3"
       ]
     }
   },
