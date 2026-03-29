@@ -16,10 +16,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vanilla_rally_emissive_factor",
-        "ambient_factor": "%vanilla_rally_ambient_factor",
-        "diffuse_factor": "%vanilla_rally_diffuse_factor",
-        "specular_factor": "%vanilla_rally_specular_factor",
+        "emissive_factor": "%vehicle_arena_emissive_factor",
+        "ambient_factor": "%vehicle_arena_ambient_factor",
+        "diffuse_factor": "%vehicle_arena_diffuse_factor",
+        "specular_factor": "%vehicle_arena_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -45,10 +45,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vanilla_rally_emissive_factor",
-        "ambient_factor": "%vanilla_rally_ambient_factor",
-        "diffuse_factor": "%vanilla_rally_diffuse_factor",
-        "specular_factor": "%vanilla_rally_specular_factor",
+        "emissive_factor": "%vehicle_arena_emissive_factor",
+        "ambient_factor": "%vehicle_arena_ambient_factor",
+        "diffuse_factor": "%vehicle_arena_diffuse_factor",
+        "specular_factor": "%vehicle_arena_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -74,10 +74,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vanilla_rally_emissive_factor",
-        "ambient_factor": "%vanilla_rally_ambient_factor",
-        "diffuse_factor": "%vanilla_rally_diffuse_factor",
-        "specular_factor": "%vanilla_rally_specular_factor",
+        "emissive_factor": "%vehicle_arena_emissive_factor",
+        "ambient_factor": "%vehicle_arena_ambient_factor",
+        "diffuse_factor": "%vehicle_arena_diffuse_factor",
+        "specular_factor": "%vehicle_arena_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -103,10 +103,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vanilla_rally_emissive_factor",
-        "ambient_factor": "%vanilla_rally_ambient_factor",
-        "diffuse_factor": "%vanilla_rally_diffuse_factor",
-        "specular_factor": "%vanilla_rally_specular_factor",
+        "emissive_factor": "%vehicle_arena_emissive_factor",
+        "ambient_factor": "%vehicle_arena_ambient_factor",
+        "diffuse_factor": "%vehicle_arena_diffuse_factor",
+        "specular_factor": "%vehicle_arena_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -132,10 +132,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vanilla_rally_emissive_factor",
-        "ambient_factor": "%vanilla_rally_ambient_factor",
-        "diffuse_factor": "%vanilla_rally_diffuse_factor",
-        "specular_factor": "%vanilla_rally_specular_factor",
+        "emissive_factor": "%vehicle_arena_emissive_factor",
+        "ambient_factor": "%vehicle_arena_ambient_factor",
+        "diffuse_factor": "%vehicle_arena_diffuse_factor",
+        "specular_factor": "%vehicle_arena_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"

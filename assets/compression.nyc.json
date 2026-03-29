@@ -22,6 +22,7 @@
     ["\"ceiling\": \"", "\"ceiling\": \"#"],
     ["\"back\": \"", "\"back\": \"#"],
     ["\"front_specular\": \"", "\"front_specular\": \"#"],
-    ["\\btrashcan1\\b", "trashcan_yethiel"]] } },
+    ["\\btrashcan1\\b", "trashcan_yethiel"],
+    ["vanilla_rally", "vehicle_arena"]] } },
   { "path": "levels/nyc/heightmap.pgm", "resize": { "size": [0, 0], "periodic": false, "file_extension": ".png" } }
 ]

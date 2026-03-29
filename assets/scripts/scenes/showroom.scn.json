@@ -118,10 +118,10 @@
             "occluder_pass": "none",
             "aggregate_mode": "none",
             "transformation_mode": "all",
-            "emissive_factor": "%vanilla_rally_emissive_factor",
-            "ambient_factor": "%vanilla_rally_ambient_factor",
-            "diffuse_factor": "%vanilla_rally_diffuse_factor",
-            "specular_factor": "%vanilla_rally_specular_factor",
+            "emissive_factor": "%vehicle_arena_emissive_factor",
+            "ambient_factor": "%vehicle_arena_ambient_factor",
+            "diffuse_factor": "%vehicle_arena_diffuse_factor",
+            "specular_factor": "%vehicle_arena_specular_factor",
             "shading": {
               "fresnel": {
                 "min": 0,
