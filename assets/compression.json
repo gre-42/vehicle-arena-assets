@@ -1,12 +1,10 @@
 [
-  {
-    "path": "models/SR/XZ/textures/XZ_Tire.png",
-    "luma_chrominance": {
-      "luma": [0, 0],
-      "chrominance": [64, 64]
-    }
-  },
-  { "path": "models/SR/XZ/textures/XZ_Tire_refl.png", "copy": {} },
+  { "path": "models/SR/XZ/textures/XZ_Tire.png", "luma_chrominance": { "luma": [512, 512], "chrominance": [64, 64] } },
+  { "path": "models/SR/XZ/textures/XZ_Tire_norm.png", "resize": { "size": [512, 512], "periodic": false } },
+  { "path": "models/SR/XZ/textures/XZ_Tire_refl.png", "resize": { "size": [512, 512], "periodic": false } },
+  { "path": "models/SR/FN/textures/FN_wheel.png", "luma_chrominance": { "luma": [512, 512], "chrominance": [64, 64] } },
+  { "path": "models/SR/FN/textures/FN_wheel_norm.png", "resize": { "size": [512, 512], "periodic": false } },
+  { "path": "models/SR/FN/textures/FN_wheel_refl.png", "resize": { "size": [512, 512], "periodic": false } },
   {
     "path": "textures/ui/background/cars.png",
     "luma_chrominance": {
@@ -1107,6 +1105,12 @@
   { "path": "models/free3d.com/tiger_tank/Tiger.obj", "gzip": {} },
   { "path": "models/free3d.com/tiger_tank/Tiger_d3.obj", "gzip": {} },
   { "path": "models/free3d.com/tiger_tank/Tiger_Hitbox.obj", "gzip": {} },
+  { "path": "models/SR/FN/FN_wheel.obj", "gzip": {} },
+  { "path": "models/SR/FN/FN_wheel.mtl", "sed": { "substitute": 
+    [["map_Kd textures/FN_wheel.png", "map_Kd textures/FN_wheel.luma.png\nmap_Kdc textures/FN_wheel.chrominance.png"]],
+    "gzip": true } },
+  { "path": "models/SR/FN/FN_wheel_d0.5.obj", "gzip": {} },
+  { "path": "models/SR/FN/FN_wheel_d3.obj", "gzip": {} },
   { "path": "models/SR/XZ/XZ_wheel.obj", "gzip": {} },
   { "path": "models/SR/XZ/XZ_wheel.mtl", "sed": { "substitute": 
     [["map_Kd textures/XZ_Tire.png", "map_Kd textures/XZ_Tire.luma.png\nmap_Kdc textures/XZ_Tire.chrominance.png"]],

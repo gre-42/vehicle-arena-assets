@@ -1,0 +1,77 @@
+name: vehicle-arena
+base: core24
+version: "0.1"
+confinement: strict
+summary: A web- and arena-based shooter with vehicles
+description: Vehicle Arena is a web- and arena-based shooter with vehicles
+parts:
+  system-dependencies:
+    plugin: dump
+    source: .
+    stage-packages:
+      - libalut0
+      - libasound2
+      - libasound2-plugins
+      - libglfw3
+      - libmp3lame0
+      - libomp5-20
+      - libopenal1
+  executables:
+    plugin: dump
+    source-type: local
+    source: Bin
+  libraries:
+    plugin: dump
+    source-type: local
+    source: Lib
+  assets0:
+    plugin: dump
+    source-type: local
+    source: assets
+  assets1:
+    plugin: dump
+    source-type: local
+    source: compressed
+  alsa-pulse-config:
+    plugin: nil
+    override-build: |
+      mkdir -p $SNAPCRAFT_PART_INSTALL/etc
+      cat <<'EOF' > $SNAPCRAFT_PART_INSTALL/etc/asound.conf
+      pcm.!default {
+          type pulse
+      }
+      ctl.!default {
+          type pulse
+      }
+      EOF
+  launcher:
+    plugin: nil
+    override-build: |
+      cat <<'EOF' > $SNAPCRAFT_PART_INSTALL/launch.sh
+      #!/bin/sh
+      $SNAP/Bin/render_scene_file                             \
+        "$SNAP/assets;$SNAP/compressed"                       \
+        $SNAP/assets/levels/main/main.scn.json                \
+        --app_reldir .vehicle_arena                           \
+        --print_render_residual_time                          \
+        --nsamples_msaa 2                                     \
+        --windowed_width 1500                                 \
+        --windowed_height 900                                 \
+        --flavor extended                                     \
+        "$@"
+      EOF
+      chmod +x $SNAPCRAFT_PART_INSTALL/launch.sh
+layout:
+  /usr/share/alsa:
+    bind: $SNAP/usr/share/alsa
+  /etc/alsa:
+    bind: $SNAP/etc/alsa
+apps:
+  vehicle-arena:
+    command: launch.sh
+    plugs:
+      - audio-playback
+    environment:
+      ALSA_CONFIG_PATH: $SNAP/etc/asound.conf
+      LD_LIBRARY_PATH: $SNAP/usr/lib/${CRAFT_ARCH_TRIPLET_BUILD_FOR}/pulseaudio:$SNAP/usr/lib/${CRAFT_ARCH_TRIPLET_BUILD_FOR}:$LD_LIBRARY_PATH
+      PULSE_SERVER: unix:$XDG_RUNTIME_DIR/../pulse/native

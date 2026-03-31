@@ -1,4 +1,4 @@
-.PHONY: build run run_dev test compress_to_tmp
+.PHONY: build run run_dev test compress_to_tmp pack_snap
 
 SOURCE_DIR ?= ../vehicle-arena
 CMAKE_BUILD_TYPE ?= RelWithDebInfo
@@ -97,3 +97,19 @@ test: build run
 
 compress_to_tmp: build
 	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --configs "$(COMPRESS_CONFIGS)"
+
+pack_snap:
+	make build CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
+	rsync --archive "$(SOURCE_DIR)/VehicleArena/LURelease/Bin/" Bin
+	rsync --archive \
+		--include='*.so' \
+		--include='*.so.?' \
+		--include='*.so.?.?.?' \
+		--exclude='*' \
+		"$(SOURCE_DIR)/VehicleArena/LURelease/Lib/" \
+		"$(SOURCE_DIR)/VehicleArena/RecastBuild/DebugUtils/" \
+		"$(SOURCE_DIR)/VehicleArena/RecastBuild/Detour/" \
+		"$(SOURCE_DIR)/VehicleArena/RecastBuild/Recast/" \
+		Lib
+	make -f Makefile.user compress_to_tmp DEST_DATA_DIR=compressed CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
+	snapcraft pack
