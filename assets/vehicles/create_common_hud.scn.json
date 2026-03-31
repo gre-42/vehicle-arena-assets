@@ -14,7 +14,7 @@
           "top": "minimap_widget_top",
           "locator_size": "minimap_locator_size",
           "minimap": "%minimap_file",
-          "locator": "textures/dot.png",
+          "locator": "file://textures/dot.png",
           "pointer_reference_length": 200,
           "pointer_scale": "%minimap_scale",
           "pointer_size": "%minimap_size",

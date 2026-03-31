@@ -842,49 +842,18 @@
       "chrominance": [64, 64]
     }
   },
-  {
-    "path": "textures/skybox/synthwave/1.png",
-    "copy": {}
-  },
-  {
-    "path": "textures/skybox/learnopengl.com",
-    "glob": "\\.jpg$",
-    "copy": {}
-  },
-  {
-    "path": "textures/skybox/rgb",
-    "glob": "\\.png$",
-    "copy": {}
-  },
-  {
-    "path": "textures/interiorbox",
-    "glob": "\\.png$",
-    "copy": {}
-  },
-  {
-    "path": "textures/prococean/heightmap_2.png",
-    "copy": {}
-  },
-  {
-    "path": "textures/prococean/heightmap_3.png",
-    "copy": {}
-  },
-  {
-    "path": "textures/prococean/ocean_uniform.png",
-    "copy": {}
-  },
-  {
-    "path": "textures/noise/hf_heightmap0.png",
-    "copy": {}
-  },
-  {
-    "path": "textures/noise/hf_heightmap1.png",
-    "copy": {}
-  },
-  {
-    "path": "textures/GIMP/Sponge_02.png",
-    "copy": {}
-  },
+  { "path": "textures/skybox/synthwave/1.png", "copy": {} },
+  { "path": "textures/skybox/learnopengl.com", "glob": "\\.jpg$", "copy": {} },
+  { "path": "textures/skybox/rgb", "glob": "\\.png$", "copy": {} },
+  { "path": "textures/interiorbox", "glob": "\\.png$", "copy": {} },
+  { "path": "textures/prococean/heightmap_2.png", "copy": {} },
+  { "path": "textures/prococean/heightmap_3.png", "copy": {} },
+  { "path": "textures/prococean/ocean_uniform.png", "copy": {} },
+  { "path": "textures/noise/hf_heightmap0.png", "copy": {} },
+  { "path": "textures/noise/hf_heightmap1.png", "copy": {} },
+  { "path": "textures/noise/foliagemap.png", "resize": { "size": [256, 256], "periodic": true } },
+  { "path": "textures/dot.png", "copy": {} },
+  { "path": "textures/GIMP/Sponge_02.png", "copy": {} },
   {
     "path": "textures/cc0textures/Bricks058_2K_Color.jpg",
     "fragment": {

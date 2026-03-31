@@ -25,6 +25,6 @@
   {"exclude": "%true", "include": "billboards_vegetation7_atlas.scn.json"},
   {"exclude": "%true", "include": "billboards_vegetation8_atlas.scn.json"},
   {"exclude": "%true", "include": "billboards_vegetation9_atlas.scn.json"},
-  {"exclude": "%true", "include": "billboards_vegetation10_atlas.scn.json"},
+  {"include": "billboards_vegetation10_atlas.scn.json"},
   {"exclude": "%true", "include": "billboards_vegetation11_atlas.scn.json"}
 ]
