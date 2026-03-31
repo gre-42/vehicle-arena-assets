@@ -47,11 +47,12 @@ parts:
   launcher:
     plugin: nil
     override-build: |
-      cat <<'EOF' > $SNAPCRAFT_PART_INSTALL/launch.sh
+      cat <<'EOF' > "$SNAPCRAFT_PART_INSTALL/launch.sh"
       #!/bin/sh
+      CURRENT="$(echo "$SNAP" | sed "s#$SNAP_REVISION\$#current#g")"
       $SNAP/Bin/render_scene_file                             \
-        "$SNAP/assets;$SNAP/compressed"                       \
-        $SNAP/assets/levels/main/main.scn.json                \
+        "$CURRENT/assets;$CURRENT/compressed"                 \
+        "$CURRENT/assets/levels/main/main.scn.json"           \
         --app_reldir .vehicle_arena                           \
         --print_render_residual_time                          \
         --nsamples_msaa 2                                     \
@@ -60,7 +61,7 @@ parts:
         --flavor extended                                     \
         "$@"
       EOF
-      chmod +x $SNAPCRAFT_PART_INSTALL/launch.sh
+      chmod +x "$SNAPCRAFT_PART_INSTALL/launch.sh"
 layout:
   /usr/share/alsa:
     bind: $SNAP/usr/share/alsa
