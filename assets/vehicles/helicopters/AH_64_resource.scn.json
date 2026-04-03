@@ -33,7 +33,8 @@
       "center_distances": [0, "inf"],
       "blend_mode": "off",
       "occluder_pass": "none",
-      "rectangle_triangulation_mode": "disabled"
+      "rectangle_triangulation_mode": "disabled",
+      "physics_material": "attr_visible|attr_collide|obj_hitbox|attr_convex|surface_base_metal"
     }
   },
   {
@@ -44,7 +45,8 @@
       "center_distances": [0, "inf"],
       "blend_mode": "off",
       "occluder_pass": "none",
-      "rectangle_triangulation_mode": "disabled"
+      "rectangle_triangulation_mode": "disabled",
+      "physics_material": "attr_visible|attr_collide|obj_hitbox|attr_convex|surface_base_metal"
     }
   },
   {
@@ -58,8 +60,6 @@
     }
   },
   {"comment": {"call": "gen_triangle_rays", "arguments": {"name": "AH_box_64_hitbox", "npoints": 5, "lengths": [0.7, 0.7, 0.7], "delete_triangles": false}}},
-  {"call": "modify_physics_material_tags", "arguments": {"resource_name": "AH_box_64_hitbox_front", "add": "obj_hitbox"}},
-  {"call": "modify_physics_material_tags", "arguments": {"resource_name": "AH_box_64_hitbox_rear", "add": "obj_hitbox"}},
   {
     "call": "obj_resource",
     "arguments": {
@@ -75,11 +75,11 @@
         "occluded_pass": "none",
         "occluder_pass": "none",
         "aggregate_mode": "none",
-        "transformation_mode": "all"
+        "transformation_mode": "all",
+        "physics_material": "attr_collide|obj_tire_line|surface_base_tire"
       }
     }
   },
-  {"call": "modify_physics_material_tags", "arguments": {"resource_name": "AH_64_tirelines", "add": "obj_tire_line"}},
   {"call": "gen_ray", "arguments": {"name": "AH_64_tirelines", "from": [-1.0,  0.6 , -1.1], "to": [-1.0, -0.2 , -1.1]}}, {"comment": "left  front"},
   {"call": "gen_ray", "arguments": {"name": "AH_64_tirelines", "from": [ 1.0,  0.6 , -1.1], "to": [ 1.0, -0.2 , -1.1]}}, {"comment": "right front"},
   {"call": "gen_ray", "arguments": {"name": "AH_64_tirelines", "from": [ 0.0,  0.65,  9.6], "to": [ 0.0, -0.15,  9.6]}}, {"comment": "central rear"},

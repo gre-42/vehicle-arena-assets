@@ -31,5 +31,13 @@
   { "path": "models/sketchfab.com/AH-64-apache/textures/ah64_hull.png", "luma_chrominance": { "luma": [512, 512], "chrominance": [64, 64] } },
   { "path": "models/sketchfab.com/AH-64-apache/textures/Apache_nrm.png", "resize": { "size": [512, 512], "periodic": false } },
   { "path": "models/sketchfab.com/AH-64-apache/textures/Apache_specular.png", "resize": { "size": [512, 512], "periodic": false } },
+  { "path": "models/free3d.com/tiger_tank", "glob": "Tiger(_d3|_Hitbox|)\\.obj$", "gzip": {} },
+  { "path": "models/free3d.com/tiger_tank/Tiger.mtl", "sed": { "substitute": 
+    [["map_Kd tex/Tank_body.png", "map_Kd tex/Tank_body.luma.png\nmap_Kdc tex/Tank_body.chrominance.png"],
+     ["map_Kd tex/MG_body.png", "map_Kd tex/MG_body.luma.png\nmap_Kdc tex/MG_body.chrominance.png"]],
+    "gzip": true } },
+  { "path": "models/free3d.com/tiger_tank/tex", "glob": "Tank_body\\.png$", "luma_chrominance": { "luma": [1024, 1024], "chrominance": [64, 64] } },
+  { "path": "models/free3d.com/tiger_tank/tex", "glob": "MG_body\\.png$", "luma_chrominance": { "luma": [256, 128], "chrominance": [64, 32] } },
+  { "path": "models/free3d.com/tiger_tank/tex/Track.png", "copy": {} },
   { "path": "textures/hud", "glob": "\\.png$", "copy": {} }
 ]
