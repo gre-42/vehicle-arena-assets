@@ -20,7 +20,8 @@
           "transformation_mode": "all",
           "triangle_tangent_error_behavior": "zero",
           "rectangle_triangulation_mode": "%rectangle_triangulation_mode",
-          "delaunay_error_behavior": "warn"
+          "delaunay_error_behavior": "warn",
+          "physics_material": "%physics_material"
         }
       }
     }
@@ -101,7 +102,8 @@
           "center_distances": "%center_distances",
           "blend_mode": "continuous",
           "occluder_pass": "%occluder_pass",
-          "rectangle_triangulation_mode": "delaunay"
+          "rectangle_triangulation_mode": "delaunay",
+          "physics_material": "attr_visible"
         }
       },
       {
