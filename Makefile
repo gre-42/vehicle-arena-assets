@@ -1,6 +1,6 @@
 .PHONY: build run run_dev test compress_to_tmp pack_snap
 
-MAKE_TARGET ?= build
+BUILD_TARGET ?= build
 SOURCE_DIR ?= ../vehicle-arena
 CMAKE_BUILD_TYPE ?= RelWithDebInfo
 BUILD_PREFIX ?= U
@@ -56,8 +56,8 @@ CHK_ARGS = $(shell                         \
     )
 CACHE ?= 0
 
-any:
-	make $(MAKE_TARGET) -C $(SOURCE_DIR)/VehicleArena CMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
+build:
+	make $(BUILD_TARGET) -C $(SOURCE_DIR)/VehicleArena CMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
 
 run:
 	ENABLE_OSM_MAP_CACHE=$(CACHE) \
@@ -97,7 +97,7 @@ compress_to_tmp: build
 	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --configs "$(COMPRESS_CONFIGS)"
 
 pack_snap:
-	make any MAKE_TARGET="recastnavigation build" CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
+	make build BUILD_TARGET="recastnavigation build" CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
 	rsync --archive "$(SOURCE_DIR)/VehicleArena/LURelease/Bin/" Bin
 	rsync --archive \
 		--include='*.so' \
