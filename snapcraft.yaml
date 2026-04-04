@@ -6,8 +6,7 @@ summary: A web- and arena-based shooter with vehicles
 description: Vehicle Arena is a web- and arena-based shooter with vehicles
 parts:
   system-dependencies:
-    plugin: dump
-    source: .
+    plugin: nil
     stage-packages:
       - libalut0
       - libasound2
@@ -24,14 +23,13 @@ parts:
     plugin: dump
     source-type: local
     source: Lib
-  assets0:
+  assets:
     plugin: dump
     source-type: local
-    source: assets
-  assets1:
-    plugin: dump
-    source-type: local
-    source: compressed
+    source: .
+    prime:
+      - assets
+      - compressed
   alsa-pulse-config:
     plugin: nil
     override-build: |
@@ -50,7 +48,7 @@ parts:
       cat <<'EOF' > "$SNAPCRAFT_PART_INSTALL/launch.sh"
       #!/bin/sh
       CURRENT="$(echo "$SNAP" | sed "s#$SNAP_REVISION\$#current#g")"
-      $SNAP/Bin/render_scene_file                             \
+      $CURRENT/render_scene_file                              \
         "$CURRENT/assets;$CURRENT/compressed"                 \
         "$CURRENT/assets/levels/main/main.scn.json"           \
         --app_reldir .vehicle_arena                           \
