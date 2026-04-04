@@ -1,0 +1,14 @@
+[
+  { "path": "levels/arena_humans/create_spectator_cameras_arena_humans.scn.json", "copy": {} },
+  { "path": "levels/arena_humans/icon.png", "copy": {} },
+  { "path": "levels/arena_humans/manifest_arena_humans.json", "sed": { "substitute": [
+    ["\\$__DIR__", "file://$__DIR__"],
+    ["\"level_icon_file\": \"", "\"level_icon_file\": \"file://"]]} },
+  { "path": "levels/arena_humans/players.json", "copy": {} },
+  { "path": "levels/arena_humans/resources.json", "sed": { "substitute": [
+    ["\"grass_tbdpec3r\"", "\"grass_tbdpec3r_Ground037_Sl\""],
+    ["\"vegetation1\"", "\"vegetation2\""]]} },
+  { "path": "levels/arena_humans/scene_arena_humans.scn.json", "sed": { "substitute": [
+    ["\\$__DIR__", "file://$__DIR__"],
+    ["\"#grf_2048\"", "\"#grf_512\""]] } }
+]

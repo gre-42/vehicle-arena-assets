@@ -2,7 +2,7 @@
 
 BUILD_TARGET ?= build
 SOURCE_DIR ?= ../vehicle-arena
-CMAKE_BUILD_TYPE ?= RelWithDebInfo
+export CMAKE_BUILD_TYPE ?= RelWithDebInfo
 BUILD_PREFIX ?= U
 BIN_DIR ?= $(SOURCE_DIR)/VehicleArena/$(BUILD_PREFIX)U$(CMAKE_BUILD_TYPE)/Bin
 
@@ -10,10 +10,12 @@ SOURCE_DIRS ?= ../MGame_Github/data;../MGame_Extra
 DEST_DATA_DIR ?= /tmp/compressed
 ASSET_DIRS ?= assets
 COMPRESS_FLAGS ?=
-COMPRESS_CONFIGS ?= $(shell echo "		\
-assets/compression.json;				\
-assets/compression.race_track0.json;	\
-assets/compression.nyc.json;			\
+COMPRESS_CONFIGS ?= $(shell echo "             \
+assets/compression.json;                       \
+assets/compression.arena.json;                 \
+assets/compression.arena_humans.json;          \
+assets/compression.race_track0.json;           \
+assets/compression.nyc.json;                   \
 assets/compression.nyc_td0.json" | sed "s/ //g")
 RUN_ARGS ?=
 REMOTE_ARGS = $(shell                          \
@@ -57,7 +59,7 @@ CHK_ARGS = $(shell                         \
 CACHE ?= 0
 
 build:
-	make $(BUILD_TARGET) -C $(SOURCE_DIR)/VehicleArena CMAKE_BUILD_TYPE=$(CMAKE_BUILD_TYPE)
+	$(MAKE) $(BUILD_TARGET) -C $(SOURCE_DIR)/VehicleArena
 
 run:
 	ENABLE_OSM_MAP_CACHE=$(CACHE) \
@@ -91,13 +93,13 @@ run_tsan:
 		--devel_mode \
 		$(CHK_ARGS) $(REMOTE_ARGS) $(RUN_ARGS)
 
-test: build run
+test: build compress_to_tmp run
 
-compress_to_tmp: build
+compress_to_tmp:
 	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --configs "$(COMPRESS_CONFIGS)"
 
 pack_snap:
-	make build BUILD_TARGET="recastnavigation build" CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
+	$(MAKE) build BUILD_TARGET="recastnavigation build" CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
 	rsync --archive "$(SOURCE_DIR)/VehicleArena/LURelease/Bin/" Bin
 	rsync --archive \
 		--include='*.so' \
@@ -109,5 +111,5 @@ pack_snap:
 		"$(SOURCE_DIR)/VehicleArena/RecastBuild/Detour/" \
 		"$(SOURCE_DIR)/VehicleArena/RecastBuild/Recast/" \
 		Lib
-	make -f Makefile.user compress_to_tmp DEST_DATA_DIR=compressed CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
+	$(MAKE) -f Makefile.user compress_to_tmp DEST_DATA_DIR=compressed CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
 	snapcraft pack

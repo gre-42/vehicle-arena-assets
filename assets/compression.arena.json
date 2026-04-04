@@ -1,13 +1,14 @@
 [
-  { "path": "levels/nyc/map_nyc.osm", "gzip": {} },
-  { "path": "levels/nyc/osm_resource_nyc.scn.json", "sed": { "substitute": [
+  { "path": "levels/arena/map_arena.osm", "gzip": {} },
+  { "path": "levels/arena/osm_resource_arena.scn.json", "sed": { "substitute": [
     ["heightmap.pgm", "heightmap.png"],
     ["\\$__DIR__", "file://$__DIR__"],
     ["\\$__APPDATA__", "file://$__APPDATA__"],
+    ["map_arena.osm", "map_arena.osm.gz"],
+    ["\"textures/cc0textures/RoofingTiles002_2K_Color.jpg\"", "\"#RoofingTiles002Red\""],
     ["\"textures/", "\"file://textures/"],
-    ["\\bGround037_Sl\\b", "Ground037_dark27"],
-    ["\"ground\"", "\"#ground\""],
     ["\"window\"", "\"#window\""],
+    ["\"Bricks058_Base\"", "\"#Bricks058_Base\""],
     ["\"wall_facade_plaster_white_Base\"", "\"#wall_facade_plaster_white_Base\""],
     ["\"concrete1_2K_wh_Detail\"", "\"#concrete1_2K_wh_Detail\""],
     ["\"wall_facade_bricks_red_Base\"", "\"#wall_facade_bricks_red_Base\""],
@@ -22,7 +23,8 @@
     ["\"ceiling\": \"", "\"ceiling\": \"#"],
     ["\"back\": \"", "\"back\": \"#"],
     ["\"front_specular\": \"", "\"front_specular\": \"#"],
-    ["\\btrashcan1\\b", "trashcan_yethiel"],
+    ["\"grass_tbdpec3r\"", "\"grass_tbdpec3r_Ground037_Sl\""],
+    [".*vegetation1\\..*\n", ""],
     ["vanilla_rally", "vehicle_arena"]] } },
-  { "path": "levels/nyc/heightmap.pgm", "resize": { "size": [0, 0], "periodic": false, "file_extension": ".png" } }
+  { "path": "levels/arena/heightmap.pgm", "resize": { "size": [256, 256], "periodic": false, "file_extension": ".png" } }
 ]

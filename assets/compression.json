@@ -1038,8 +1038,12 @@
   { "path": "models/opengameart/Table_And_Chairs/table_and_chairs.obj", "gzip": {} },
   { "path": "models/opengameart/Table_And_Chairs/chair.png", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/gre42/ship0/ship0.obj", "gzip": {} },
-  { "path": "models/opengameart/crate-2/Crate.mtl", "gzip": {} },
   { "path": "models/opengameart/crate-2/Crate.obj", "gzip": {} },
+  { "path": "models/opengameart/crate-2/Crate.mtl", "sed": { "substitute": 
+    [["map_Kd Crate_Base_Color.png", "map_Kd Crate_Base_Color.luma.png\nmap_Kdc Crate_Base_Color.chrominance.png"]],
+    "gzip": true } },
+  { "path": "models/opengameart/crate-2/Crate_Base_Color.png", "luma_chrominance": { "luma": [512, 512], "chrominance": [64, 64] } },
+  { "path": "models/opengameart/crate-2/Crate_Normal.png", "resize": { "size": [512, 512], "periodic": false } },
   { "path": "models/opengameart/Hedge", "glob": "\\b(diffuse|normal).tga", "resize": { "size": [256, 256], "periodic": false, "file_extension": ".png" } },
   { "path": "models/opengameart/Hedge/Long/HedgeLongExp.mtl", "sed": {
     "substitute": [["diffuse.tga", "diffuse.png"], ["normal.tga", "normal.png"]], "gzip": true } },
@@ -1065,6 +1069,12 @@
   } },
   { "path": "models/opengameart/Facade", "glob": "\\b(sign\\d+).png$", "copy": {} },
   { "path": "models/deviantart.com/yughues-Free-Houseplants-356618110", "glob": "\\.obj$", "gzip": {} },
+  { "path": "models/deviantart.com/yughues-Free-Houseplants-356618110", "glob": "\\.mtl$", "sed": { "substitute": 
+    [["map_Kd ([^\n]+)\\.png", "map_Kd $1.luma.png\nmap_Kdc $1.chrominance.png"],
+     ["map_d ([^\n]+)\\.png", "map_d $1.luma.png"]],
+    "gzip": true } },
+  { "path": "models/deviantart.com/yughues-Free-Houseplants-356618110", "glob": "[\\\\/][^_]+\\.png$", "luma_chrominance": { "luma": [256, 256], "chrominance": [64, 64] } },
+  { "path": "models/deviantart.com/yughues-Free-Houseplants-356618110", "glob": "[\\\\/][^_]+_normal\\.png$", "resize": { "size": [256, 256], "periodic": false } },
   { "path": "models/MakeHuman/female_mh", "glob": "\\.(mhx2|mtl|obj)$", "gzip": {} },
   { "path": "models/MakeHuman/female_skirt", "glob": "\\.(mhx2|mtl|obj)$", "gzip": {} },
   { "path": "models/MakeHuman/male_mh", "glob": "\\.(mhx2|mtl|obj)$", "gzip": {} },
