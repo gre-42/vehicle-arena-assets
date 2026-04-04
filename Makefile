@@ -1,4 +1,4 @@
-.PHONY: build run run_dev test compress_to_tmp pack_snap
+.PHONY: build run run_dev test compress_to_tmp pack_snap flame_graph
 
 BUILD_TARGET ?= build
 SOURCE_DIR ?= ../vehicle-arena
@@ -56,12 +56,19 @@ CHK_ARGS = $(shell                         \
         echo --check_gl_errors;            \
     fi                                     \
     )
+OMP_ENV = $(shell                 \
+    if [ "$(OMP)" = 0 ]; then     \
+        echo OMP_NUM_THREADS=1;   \
+    fi                            \
+    )
+
 CACHE ?= 0
 
 build:
 	$(MAKE) $(BUILD_TARGET) -C $(SOURCE_DIR)/VehicleArena
 
 run:
+	$(OMP_ENV) \
 	ENABLE_OSM_MAP_CACHE=$(CACHE) \
 	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/render_scene_file" \
 		"$(ASSET_DIRS)" \
@@ -113,3 +120,7 @@ pack_snap:
 		Lib
 	$(MAKE) -f Makefile.user compress_to_tmp DEST_DATA_DIR=compressed CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
 	snapcraft pack
+
+flame_graph:
+	sudo perf script | stackcollapse-perf.pl > out.perf-folded
+	flamegraph.pl out.perf-folded > perf.svg
