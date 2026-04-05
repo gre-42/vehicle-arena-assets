@@ -1,4 +1,5 @@
 [
+  { "path": "textures/blobs", "glob": "\\.png$", "copy": {} },
   { "path": "models/SR/XZ/textures/XZ_Tire.png", "luma_chrominance": { "luma": [512, 512], "chrominance": [64, 64] } },
   { "path": "models/SR/XZ/textures/XZ_Tire_norm.png", "resize": { "size": [512, 512], "periodic": false } },
   { "path": "models/SR/XZ/textures/XZ_Tire_refl.png", "resize": { "size": [512, 512], "periodic": false } },
@@ -536,7 +537,7 @@
       "assembled_size": [2048, 2048],
       "stepsize": 200,
       "randsize": 100,
-      "channels": 4,
+      "channels": 2,
       "alpha": "file://../blobs/blob0_alpha.png",
       "add": true,
       "upsampling": 1,
@@ -579,7 +580,7 @@
       "stepsize": 100,
       "randsize": 50,
       "channels": 4,
-      "alpha": "file://../blobs/blob0_alpha.png",
+      "alpha": "file://../../blobs/blob0_alpha.png",
       "add": true,
       "upsampling": 1,
       "ols": true
@@ -964,7 +965,6 @@
   { "path": "textures/debug", "glob": "\\.png$", "copy": {} },
   { "path": "textures/histograms", "glob": "\\.png$", "copy": {} },
   { "path": "textures/barriers", "glob": "\\.png$", "copy": {} },
-  { "path": "textures/blobs", "glob": "\\.png$", "copy": {} },
   { "path": "textures/racing_lines/racing_line.png", "luma": [0, 0] },
   { "path": "textures/noise/white_blurred.png", "resize": { "size": [256, 256], "periodic": true } },
   { "path": "textures/noise/lf_heightmap.png", "resize": { "size": [256, 256], "periodic": true } },

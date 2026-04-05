@@ -32,7 +32,7 @@ REMOTE_ARGS = $(shell                          \
     fi                                         \
     )
 GDB_ARGS = $(shell                                  \
-    if [ "$(GDB)" != 0 ]; then                       \
+    if [ "$(GDB)" != 0 ]; then                      \
         echo "gdb -ex='catch throw' -ex=r --args";  \
     fi                                              \
     )
