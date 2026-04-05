@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://concrete1_2K_normGL.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.19698399305343628,
+            "slope": 1.3987137079238892
+        },
+        {
+            "offset": -0.14507418870925903,
+            "slope": 1.3011890649795532
+        },
+        {
+            "offset": -0.33184558153152466,
+            "slope": 1.3409137725830078
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

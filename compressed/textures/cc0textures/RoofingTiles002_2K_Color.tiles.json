@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://RoofingTiles002_2K_Color.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.15815404057502747,
+            "slope": 1.717041254043579
+        },
+        {
+            "offset": -0.16697880625724792,
+            "slope": 1.7276463508605957
+        },
+        {
+            "offset": -0.15466514229774475,
+            "slope": 1.6943652629852295
+        }
+    ],
+    "randsize": 100.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 200.0,
+    "upsampling": 1
+}

@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://PavingStones035_2K_Color_da.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.1549275517463684,
+            "slope": 1.3569601774215698
+        },
+        {
+            "offset": -0.13583561778068542,
+            "slope": 1.3198429346084595
+        },
+        {
+            "offset": -0.1200333833694458,
+            "slope": 1.2841113805770874
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

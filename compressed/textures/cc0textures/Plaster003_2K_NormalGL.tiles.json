@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Plaster003_2K_NormalGL.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.15688571333885193,
+            "slope": 1.3146336078643799
+        },
+        {
+            "offset": -0.16969573497772217,
+            "slope": 1.3498698472976685
+        },
+        {
+            "offset": -0.2676076889038086,
+            "slope": 1.2950092554092407
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

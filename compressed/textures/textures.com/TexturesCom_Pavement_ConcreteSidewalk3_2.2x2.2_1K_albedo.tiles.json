@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://TexturesCom_Pavement_ConcreteSidewalk3_2.2x2.2_1K_albedo.fragment.png",
+    "ols": [
+        {
+            "offset": -0.13809973001480103,
+            "slope": 1.3810827732086182
+        },
+        {
+            "offset": -0.13854363560676575,
+            "slope": 1.4190694093704224
+        },
+        {
+            "offset": -0.12404480576515198,
+            "slope": 1.4659477472305298
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        1024,
+        1024
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

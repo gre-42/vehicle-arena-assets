@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Bricks058_2K_Color.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.08107170462608337,
+            "slope": 1.1620112657546997
+        },
+        {
+            "offset": -0.08168801665306091,
+            "slope": 1.1680727005004883
+        },
+        {
+            "offset": -0.07218918204307556,
+            "slope": 1.1446720361709595
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

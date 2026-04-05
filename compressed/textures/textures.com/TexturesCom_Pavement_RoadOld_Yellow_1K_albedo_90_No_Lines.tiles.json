@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://TexturesCom_Pavement_RoadOld_Yellow_1K_albedo_90_No_Lines.fragment.png",
+    "ols": [
+        {
+            "offset": -0.05051514506340027,
+            "slope": 1.267199993133545
+        },
+        {
+            "offset": -0.04784500598907471,
+            "slope": 1.2594174146652222
+        },
+        {
+            "offset": -0.04545408487319946,
+            "slope": 1.2554538249969482
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        512,
+        1024
+    ],
+    "stepsize": 170.0,
+    "upsampling": 1
+}

@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Road007_2K_NormalGL.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.19625473022460938,
+            "slope": 1.3892755508422852
+        },
+        {
+            "offset": -0.1429615020751953,
+            "slope": 1.2598384618759155
+        },
+        {
+            "offset": -0.2649126648902893,
+            "slope": 1.2936697006225586
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        1024,
+        1024
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

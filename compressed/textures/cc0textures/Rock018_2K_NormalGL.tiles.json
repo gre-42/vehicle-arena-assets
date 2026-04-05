@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Rock018_2K_NormalGL.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.4405509829521179,
+            "slope": 1.913352608680725
+        },
+        {
+            "offset": -0.20783746242523193,
+            "slope": 1.4445022344589233
+        },
+        {
+            "offset": -1.7063007354736328,
+            "slope": 2.7225544452667236
+        }
+    ],
+    "randsize": 100.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 200.0,
+    "upsampling": 1
+}

@@ -1,0 +1,19 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 2,
+    "color": "file://dirtmap_dense.fragment.png",
+    "ols": [
+        {
+            "offset": -0.16170638799667358,
+            "slope": 1.431225299835205
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        1024,
+        1024
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

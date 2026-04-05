@@ -1,4 +1,4 @@
-.PHONY: build run run_dev test compress_to_tmp pack_snap flame_graph
+.PHONY: build run run_dev test compress pack_snap flame_graph
 
 BUILD_TARGET ?= build
 SOURCE_DIR ?= ../vehicle-arena
@@ -7,16 +7,11 @@ BUILD_PREFIX ?= U
 BIN_DIR ?= $(SOURCE_DIR)/VehicleArena/$(BUILD_PREFIX)U$(CMAKE_BUILD_TYPE)/Bin
 
 SOURCE_DIRS ?= ../MGame_Github/data;../MGame_Extra
-DEST_DATA_DIR ?= /tmp/compressed
 ASSET_DIRS ?= assets
 COMPRESS_FLAGS ?=
 COMPRESS_CONFIGS ?= $(shell echo "             \
-assets/compression.json;                       \
-assets/compression.arena.json;                 \
-assets/compression.arena_humans.json;          \
-assets/compression.race_track0.json;           \
-assets/compression.nyc.json;                   \
-assets/compression.nyc_td0.json" | sed "s/ //g")
+compressed=compression.json;                   \
+compressed.extended=compression.extended.json" | sed "s/ //g")
 RUN_ARGS ?=
 REMOTE_ARGS = $(shell                          \
     if [ "$(REMOTE_ROLE)" = server ]; then     \
@@ -100,10 +95,10 @@ run_tsan:
 		--devel_mode \
 		$(CHK_ARGS) $(REMOTE_ARGS) $(RUN_ARGS)
 
-test: build compress_to_tmp run
+test: build compress run
 
-compress_to_tmp:
-	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --dest_dir "$(DEST_DATA_DIR)" $(COMPRESS_FLAGS) --configs "$(COMPRESS_CONFIGS)"
+compress:
+	$(PERF_ARGS) $(GDB_ARGS) "$(BIN_DIR)/compress_images" --source_dirs "$(SOURCE_DIRS)" --configs "$(COMPRESS_CONFIGS)" $(COMPRESS_FLAGS)
 
 pack_snap:
 	$(MAKE) build BUILD_TARGET="recastnavigation build" CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
@@ -118,7 +113,7 @@ pack_snap:
 		"$(SOURCE_DIR)/VehicleArena/RecastBuild/Detour/" \
 		"$(SOURCE_DIR)/VehicleArena/RecastBuild/Recast/" \
 		Lib
-	$(MAKE) -f Makefile.user compress_to_tmp DEST_DATA_DIR=compressed CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
+	$(MAKE) -f Makefile.user compress CMAKE_BUILD_TYPE=Release BUILD_PREFIX=L GDB=0
 	snapcraft pack
 
 flame_graph:

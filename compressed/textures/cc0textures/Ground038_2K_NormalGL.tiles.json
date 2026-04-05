@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Ground038_2K_NormalGL.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.24938756227493286,
+            "slope": 1.4924768209457397
+        },
+        {
+            "offset": -0.21573519706726074,
+            "slope": 1.4260659217834473
+        },
+        {
+            "offset": -0.39511364698410034,
+            "slope": 1.4036664962768555
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

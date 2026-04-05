@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Fabric026_2K_Color.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.16309010982513428,
+            "slope": 1.3918110132217407
+        },
+        {
+            "offset": -0.10036194324493408,
+            "slope": 1.6300021409988403
+        },
+        {
+            "offset": -0.10477307438850403,
+            "slope": 1.5948430299758911
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

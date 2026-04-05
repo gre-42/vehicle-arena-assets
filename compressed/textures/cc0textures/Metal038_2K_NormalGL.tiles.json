@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Metal038_2K_NormalGL.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.22548389434814453,
+            "slope": 1.4468543529510498
+        },
+        {
+            "offset": -0.3013051748275757,
+            "slope": 1.6055551767349243
+        },
+        {
+            "offset": -0.5093746185302734,
+            "slope": 1.498246669769287
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

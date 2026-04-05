@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Planks026A_2K_Color.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.24107390642166138,
+            "slope": 1.3671936988830566
+        },
+        {
+            "offset": -0.19934403896331787,
+            "slope": 1.3692611455917358
+        },
+        {
+            "offset": -0.15150073170661926,
+            "slope": 1.4101941585540771
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        1024,
+        1024
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

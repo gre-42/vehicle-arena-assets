@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://Gravel010_2K_NormalGL.fragment.jpg",
+    "ols": [
+        {
+            "offset": -0.15846851468086243,
+            "slope": 1.3278412818908691
+        },
+        {
+            "offset": -0.14469242095947266,
+            "slope": 1.2811763286590576
+        },
+        {
+            "offset": -0.2990584373474121,
+            "slope": 1.3317381143569946
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        2048,
+        2048
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}

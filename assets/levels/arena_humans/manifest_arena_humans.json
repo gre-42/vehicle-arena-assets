@@ -1,0 +1,24 @@
+{
+  "id": "arena_humans",
+  "title": "Arena humans",
+  "required": {
+    "fixed": ["%if_devel", "(%user_count <= %max_users)"],
+    "dynamic": "(%selected_game_mode in %game_modes)"
+  },
+  "on_execute": {
+    "include": "scene_arena_humans.scn.json"
+  },
+  "on_before_select": {
+    "call": "globals",
+    "arguments": {
+      "selected_level_id": "arena_humans",
+      "level_icon_file": "file://levels/arena_humans/icon.png",
+      "minimap_file": null
+    }
+  },
+  "database": {
+    "max_users": 1,
+    "if_raceway_circular": false,
+    "game_modes": ["team_deathmatch"]
+  }
+}

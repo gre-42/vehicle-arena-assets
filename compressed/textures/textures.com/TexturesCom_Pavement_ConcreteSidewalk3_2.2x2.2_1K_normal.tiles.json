@@ -1,0 +1,27 @@
+{
+    "add": true,
+    "alpha": "file://../blobs/blob0_alpha.png",
+    "channels": 4,
+    "color": "file://TexturesCom_Pavement_ConcreteSidewalk3_2.2x2.2_1K_normal.fragment.png",
+    "ols": [
+        {
+            "offset": -0.20684581995010376,
+            "slope": 1.4321624040603638
+        },
+        {
+            "offset": -0.1619754135608673,
+            "slope": 1.3670992851257324
+        },
+        {
+            "offset": -0.27108943462371826,
+            "slope": 1.2593567371368408
+        }
+    ],
+    "randsize": 50.0,
+    "size": [
+        1024,
+        1024
+    ],
+    "stepsize": 100.0,
+    "upsampling": 1
+}
