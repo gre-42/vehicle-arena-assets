@@ -36,7 +36,7 @@ GDB_ARGS = $(shell                                  \
         echo "gdb -ex='catch throw' -ex=r --args";  \
     fi                                              \
     )
-SHOW_MOUSE_CURSOR_ARGS = $(shell         \
+SHOW_MOUSE_CURSOR_ARGS = $(shell    \
     if [ "$(CURSOR)" != 0 ]; then   \
         echo --show_mouse_cursor;   \
     fi                              \
