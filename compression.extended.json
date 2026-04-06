@@ -24,11 +24,11 @@
   { "path": "models/sketchfab.com/AH-64-apache/tail_rotor_spinning.mtl", "gzip": {} },
   { "path": "models/sketchfab.com/AH-64-apache/tail_rotor_spinning.png", "copy": {} },
   { "path": "models/sketchfab.com/AH-64-apache/AH_64.mtl", "sed": { "substitute": 
-    [["map_Kd textures/ah64_hull.png", "map_Kd textures/ah64_hull.luma.png\nmap_Kdc textures/ah64_hull.chrominance.png"]],
+    [["map_Kd textures/ah64_hull.png", "map_Kd textures/ah64_hull.jpg"]],
     "gzip": true } },
   { "path": "models/sketchfab.com/AH-64-apache", "glob": "\\.obj$", "gzip": {} },
   { "path": "models/sketchfab.com/AH-64-apache/glass.png", "copy": {} },
-  { "path": "models/sketchfab.com/AH-64-apache/textures/ah64_hull.png", "luma_chrominance": { "luma": [512, 512], "chrominance": [64, 64] } },
+  { "path": "models/sketchfab.com/AH-64-apache/textures/ah64_hull.png", "resize": { "size": [0, 0], "periodic": false, "file_extension": ".jpg", "jpg_quality": 97 } },
   { "path": "models/sketchfab.com/AH-64-apache/textures/Apache_nrm.png", "resize": { "size": [512, 512], "periodic": false } },
   { "path": "models/sketchfab.com/AH-64-apache/textures/Apache_specular.png", "resize": { "size": [512, 512], "periodic": false } },
   { "path": "models/free3d.com/tiger_tank", "glob": "Tiger(_d3|_Hitbox|)\\.obj$", "gzip": {} },
