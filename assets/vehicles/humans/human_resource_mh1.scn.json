@@ -3,7 +3,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "female_mh_orig",
-      "filename": "file://models/MakeHuman/female_mh/t_pose_lowpoly.mhx2.gz",
+      "filename": "file://models/MakeHuman/female_mh/t_pose_lowpoly.$animated_mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -30,7 +30,7 @@
         "call": "obj_resource",
         "arguments": {
           "name": "$dir$decimate",
-          "filename": "file://models/MakeHuman/$dir/t_pose_lowpoly$decimate.obj.gz",
+          "filename": "file://models/MakeHuman/$dir/t_pose_lowpoly$decimate.$mesh",
           "config": {
             "position": "%position",
             "rotation": [0, 0, 0],

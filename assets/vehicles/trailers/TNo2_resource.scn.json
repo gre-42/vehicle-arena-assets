@@ -5,7 +5,7 @@
       "call": "obj_resource",
       "arguments": {
         "name": "TNo2_obj/$name",
-        "filename": "file://models/sketchfab.com/trailer-with-wood-no2/4-wheels/$name.obj.gz",
+        "filename": "file://models/sketchfab.com/trailer-with-wood-no2/4-wheels/$name.$mesh",
         "config": {
           "position": [0, 0, 0],
           "rotation": [0, 90, 0],
@@ -73,7 +73,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "TNo2_massbox",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 1.3, 0.3],
         "rotation": [0, 0, 0],
@@ -134,7 +134,7 @@
         "call": "obj_resource",
         "arguments": {
           "name": "TNo2_obj/$name",
-          "filename": "file://models/sketchfab.com/trailer-with-wood-no2/4-wheels/$name.obj.gz",
+          "filename": "file://models/sketchfab.com/trailer-with-wood-no2/4-wheels/$name.$mesh",
           "config": {
             "position": [0, 0, 0],
             "rotation": [0, 90, 0],

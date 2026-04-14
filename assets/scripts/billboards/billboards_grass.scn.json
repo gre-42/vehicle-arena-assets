@@ -3,7 +3,7 @@
     "comment": "# square_resource name=grass texture_filename=textures/grass.png min=-2 0 max=2 4;"
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "blending_x_resource",
     "arguments": {
       "name": "grass",
@@ -20,11 +20,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "blending_x_resource",
     "arguments": {
       "name": "tree",
-      "texture_filename": "textures/00210_Baeume_Key_LOW-cropped.png",
+      "texture_filename": "file://textures/00210_Baeume_Key_LOW-cropped.png",
       "min": [-5, 0],
       "max": [5, 10],
       "occluded_pass": "none",
@@ -37,11 +37,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "blending_x_resource",
     "arguments": {
       "name": "tree2",
-      "texture_filename": "textures/pine_norm_gr1.png",
+      "texture_filename": "file://textures/pine_norm_gr1.png",
       "min": [-5, 0],
       "max": [5, 10],
       "occluded_pass": "none",
@@ -150,7 +150,7 @@
     "call": "square_resource",
     "arguments": {
       "name": "grass12y",
-      "texture_filename": "textures/SR/grass12y-.png",
+      "texture_filename": "file://textures/SR/grass12y-.png",
       "min": [-0.7, 0],
       "max": [0.7, 1.4],
       "center_distances": [0, 501],
@@ -184,7 +184,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "grass_tbdpec3r",
@@ -203,7 +203,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "grass_tbdpec3r_dark27",
@@ -222,7 +222,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "grass_tbdpec3r_Ground003",
@@ -259,7 +259,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "grass_tbdpec3r_Ground037",
@@ -278,6 +278,7 @@
     }
   },
   {
+    "exclude": "%if_android",
     "call": "square_resource",
     "arguments": {
       "name": "grass_tbdpec3r_Ground037_Sl",
@@ -296,7 +297,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "grass_tbdpec3r_Ground037_Sl_large",
@@ -351,7 +352,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "grass2g_near",
@@ -370,11 +371,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "grass3g",
-      "texture_filename": "textures/SR/grass3g.png",
+      "texture_filename": "file://textures/SR/grass3g.png",
       "min": [-0.7, 0],
       "max": [0.7, 1.4],
       "center_distances": [0, 501],
@@ -531,11 +532,11 @@
     ]
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "kuudere_lisadikaprio_casual_smile",
-      "texture_filename": "textures/opengameart/kuudere_lisadikaprio/casual_smile.png",
+      "texture_filename": "file://textures/opengameart/kuudere_lisadikaprio/casual_smile.png",
       "min": [-0.425, 0],
       "max": [0.425, 1.7],
       "center_distances": [0, 501],
@@ -550,11 +551,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "female-standing1",
-      "texture_filename": "models/MakeHuman/female-standing1.png",
+      "texture_filename": "file://models/MakeHuman/female-standing1.png",
       "min": [-0.55, 0],
       "max": [0.55, 2.2],
       "center_distances": [0, 501],
@@ -569,11 +570,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "female-standing2",
-      "texture_filename": "models/MakeHuman/female-standing2.png",
+      "texture_filename": "file://models/MakeHuman/female-standing2.png",
       "min": [-0.55, 0],
       "max": [0.55, 2.2],
       "center_distances": [0, 501],
@@ -588,11 +589,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "female-standing3",
-      "texture_filename": "models/MakeHuman/female-standing3.png",
+      "texture_filename": "file://models/MakeHuman/female-standing3.png",
       "min": [-0.55, 0],
       "max": [0.55, 2.2],
       "center_distances": [0, 501],
@@ -607,11 +608,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "female-standing4",
-      "texture_filename": "models/MakeHuman/female-standing4.png",
+      "texture_filename": "file://models/MakeHuman/female-standing4.png",
       "min": [-0.55, 0],
       "max": [0.55, 2.2],
       "center_distances": [0, 501],
@@ -626,11 +627,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "kuudere_lisadikaprio_school_uniform_smile",
-      "texture_filename": "textures/opengameart/kuudere_lisadikaprio/school_uniform_smile.png",
+      "texture_filename": "file://textures/opengameart/kuudere_lisadikaprio/school_uniform_smile.png",
       "min": [-0.425, 0],
       "max": [0.425, 1.7],
       "center_distances": [0, 501],
@@ -645,11 +646,11 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": [["%if_web", "%if_android"]],
     "call": "square_resource",
     "arguments": {
       "name": "kuudere_lisadikaprio_jacket_school_uniform_smile",
-      "texture_filename": "textures/opengameart/kuudere_lisadikaprio/jacket_school_uniform_smile.png",
+      "texture_filename": "file://textures/opengameart/kuudere_lisadikaprio/jacket_school_uniform_smile.png",
       "min": [-0.425, 0],
       "max": [0.425, 1.7],
       "center_distances": [0, 501],
@@ -734,7 +735,7 @@
     "comment": "Hedge textures"
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "_add_hist_hedge_0_90",
     "arguments": {
       "name": "hedge_small",
@@ -743,7 +744,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "_add_hist_hedge_0_90",
     "arguments": {
       "name": "hedge_small_round",
@@ -752,7 +753,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "_add_hist_hedge_0_90",
     "arguments": {
       "name": "hedge_long",
@@ -761,7 +762,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "_add_hist_hedge_0_90",
     "arguments": {
       "name": "hedge_long_round",
@@ -773,7 +774,7 @@
     "comment": "Hedge billboards"
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "create_hedge_billboard",
     "arguments": {
       "min": [-1.5, 0],
@@ -784,7 +785,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "create_hedge_billboard",
     "arguments": {
       "min": [-1.5, 0],
@@ -795,7 +796,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "create_hedge_billboard",
     "arguments": {
       "min": [-1.5, 0],
@@ -806,7 +807,7 @@
     }
   },
   {
-    "exclude": "%true",
+    "exclude": "%if_web",
     "playback": "create_hedge_billboard",
     "arguments": {
       "min": [-1.5, 0],

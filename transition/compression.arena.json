@@ -24,7 +24,6 @@
     ["\"back\": \"", "\"back\": \"#"],
     ["\"front_specular\": \"", "\"front_specular\": \"#"],
     ["\"grass_tbdpec3r\"", "\"grass_tbdpec3r_Ground037_Sl\""],
-    [".*vegetation1\\..*\n", ""],
-    ["vanilla_rally", "vehicle_arena"]] } },
+    [".*vegetation1\\..*\n", ""]] } },
   { "path": "levels/arena/heightmap.pgm", "resize": { "size": [256, 256], "periodic": false, "file_extension": ".png" } }
 ]

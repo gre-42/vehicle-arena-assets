@@ -5,7 +5,7 @@
       "call": "obj_resource",
       "arguments": {
         "name": "checkpoint_arrow",
-        "filename": "file://models/Arrow/arrow.obj.gz",
+        "filename": "file://models/Arrow/arrow.$mesh",
         "config": {
         "position": [0, 5, 0],
         "rotation": [0, 90, 0],
@@ -17,10 +17,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "fog_distances": "%fog_distances",
         "fog_ambient": "%fog_ambient"
         }
@@ -51,7 +51,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "box_on_ground",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 1, 0],
         "rotation": [0, 0, 0],
@@ -63,10 +63,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -79,7 +79,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "topdown_locator",
-      "filename": "file://models/TransparentBox/tbox.obj.gz",
+      "filename": "file://models/TransparentBox/tbox.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -92,10 +92,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -109,7 +109,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "flag",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 500, 0],
         "rotation": [0, 0, 0],
@@ -121,10 +121,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -137,7 +137,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "flag_z",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 0, 500],
         "rotation": [0, 0, 0],
@@ -149,10 +149,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -165,7 +165,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "beacon",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -177,10 +177,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -193,7 +193,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "beacon_instance",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -205,10 +205,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -221,7 +221,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "sphere",
-      "filename": "file://models/primitives/sphere.obj.gz",
+      "filename": "file://models/primitives/sphere.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -234,10 +234,10 @@
         "aggregate_mode": "none",
         "transformation_mode": "all",
         "reflection_map": "#car",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -250,7 +250,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "beacon1",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -262,10 +262,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -278,7 +278,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "gizmo",
-      "filename": "file://models/gizmo.obj.gz",
+      "filename": "file://models/gizmo.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -290,10 +290,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -306,7 +306,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "tank_bullet_renderable",
-      "filename": "file://models/bullet.obj.gz",
+      "filename": "file://models/bullet.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [-90, 0, 0],
@@ -318,10 +318,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "all",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -371,7 +371,7 @@
         "call": "obj_resource",
         "arguments": {
           "name": "grenade_hitbox",
-          "filename": "file://models/primitives/box.obj.gz",
+          "filename": "file://models/primitives/box.$mesh",
           "config": {
             "position": [0, 0, 0],
             "rotation": [0, 0, 0],

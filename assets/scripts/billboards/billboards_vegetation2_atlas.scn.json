@@ -57,7 +57,7 @@
     }
   },
   {
-    "required": "%false",
+    "exclude": "%true",
     "call": "save_texture_array_png",
     "arguments": {
       "name": "vegetation2",

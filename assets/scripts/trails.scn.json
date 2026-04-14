@@ -114,7 +114,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "trail_segment_20x20",
-      "filename": "file://models/trail_segment.obj.gz",
+      "filename": "file://models/trail_segment.$mesh",
       "config": {
         "position": [0, 0, -0.5],
         "rotation": [0, 0, 0],
@@ -134,7 +134,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "trail_segment_5x5",
-      "filename": "file://models/trail_segment.obj.gz",
+      "filename": "file://models/trail_segment.$mesh",
       "config": {
         "position": [0, 0, -0.5],
         "rotation": [0, 0, 0],
@@ -154,7 +154,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "trail_segment_2x2",
-      "filename": "file://models/trail_segment.obj.gz",
+      "filename": "file://models/trail_segment.$mesh",
       "config": {
         "position": [0, 0, -0.5],
         "rotation": [0, 0, 0],

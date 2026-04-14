@@ -3,7 +3,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "ship0_hitbox",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -65,7 +65,7 @@
       "call": "obj_resource",
       "arguments": {
         "name": "%name",
-        "filename": "file://models/gre42/$name.obj.gz",
+        "filename": "file://models/gre42/$name.$mesh",
         "config": {
           "position": [0, -0.3, 0],
           "rotation": [0, 0, 0],

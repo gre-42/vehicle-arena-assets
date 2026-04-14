@@ -3,7 +3,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "basketball_hoop",
-      "filename": "file://models/gre42/Basketball/BasketballHoop.obj.gz",
+      "filename": "file://models/gre42/Basketball/BasketballHoop.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -15,10 +15,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -37,7 +37,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "street_light",
-      "filename": "file://models/gre42/street_light/street_light.obj.gz",
+      "filename": "file://models/gre42/street_light/street_light.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -50,10 +50,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -72,7 +72,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "street_light2",
-      "filename": "file://models/gre42/street_light/street_light2.obj.gz",
+      "filename": "file://models/gre42/street_light/street_light2.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 180, 0],
@@ -85,10 +85,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -114,7 +114,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "traffic_cone",
-      "filename": "file://models/gre42/traffic_cone/traffic_cone.obj.gz",
+      "filename": "file://models/gre42/traffic_cone/traffic_cone.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -126,10 +126,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -148,7 +148,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "corner_sign",
-      "filename": "file://models/gre42/corner_sign/corner_sign.obj.gz",
+      "filename": "file://models/gre42/corner_sign/corner_sign.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -161,10 +161,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -183,7 +183,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "road_bollard",
-      "filename": "file://models/gre42/road_bollard/road_bollard.obj.gz",
+      "filename": "file://models/gre42/road_bollard/road_bollard.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -195,10 +195,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -217,7 +217,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "road_bollard_hitbox",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -229,10 +229,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "position",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -247,7 +247,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "road_bollard2",
-      "filename": "file://models/gre42/road_bollard/road_bollard2.obj.gz",
+      "filename": "file://models/gre42/road_bollard/road_bollard2.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -259,10 +259,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -281,7 +281,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "road_bollard3",
-      "filename": "file://models/gre42/road_bollard/road_bollard3.obj.gz",
+      "filename": "file://models/gre42/road_bollard/road_bollard3.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -293,10 +293,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -315,7 +315,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "fence_stick",
-      "filename": "file://models/opengameart/Wood/fence_stick.obj.gz",
+      "filename": "file://models/opengameart/Wood/fence_stick.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -327,10 +327,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -350,7 +350,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "street_light_hitbox",
-      "filename": "file://models/primitives/box.obj.gz",
+      "filename": "file://models/primitives/box.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -362,10 +362,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "none",
         "transformation_mode": "position",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient"
@@ -379,7 +379,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "dumpster",
-      "filename": "file://models/opengameart/Dumpster/Dumpster.obj.gz",
+      "filename": "file://models/opengameart/Dumpster/Dumpster.$mesh",
       "config": {
         "position": [-1.25, -0.15, 0.67],
         "rotation": [0, 0, 0],
@@ -391,10 +391,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -413,7 +413,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "trashcan2",
-      "filename": "file://models/opengameart/Trashcan2/Trashcan.obj.gz",
+      "filename": "file://models/opengameart/Trashcan2/Trashcan.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -425,10 +425,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -447,7 +447,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "trashcan_yethiel",
-      "filename": "file://models/opengameart/trashcan_yethiel/trashcan.obj.gz",
+      "filename": "file://models/opengameart/trashcan_yethiel/trashcan.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, -90, 0],
@@ -460,10 +460,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -482,7 +482,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "mailbox",
-      "filename": "file://models/opengameart/Mailbox/Mailbox_flat.obj.gz",
+      "filename": "file://models/opengameart/Mailbox/Mailbox_flat.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -494,10 +494,10 @@
         "occluder_pass": "none",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -516,7 +516,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "bench",
-      "filename": "file://models/opengameart/Bench/bench.obj.gz",
+      "filename": "file://models/opengameart/Bench/bench.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -528,10 +528,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -550,7 +550,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "table_and_chairs",
-      "filename": "file://models/opengameart/Table_And_Chairs/table_and_chairs.obj.gz",
+      "filename": "file://models/opengameart/Table_And_Chairs/table_and_chairs.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -563,10 +563,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -586,7 +586,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "ship",
-      "filename": "file://models/gre42/ship0/ship0.obj.gz",
+      "filename": "file://models/gre42/ship0/ship0.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -599,10 +599,10 @@
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
         "triangle_tangent_error_behavior": "zero",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -622,7 +622,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "tire_barrier2",
-      "filename": "file://models/tire_barrier2/tire_barrier2.obj.gz",
+      "filename": "file://models/tire_barrier2/tire_barrier2.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -634,10 +634,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -657,7 +657,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "crate",
-      "filename": "file://models/opengameart/crate-2/Crate.obj.gz",
+      "filename": "file://models/opengameart/crate-2/Crate.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -669,10 +669,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -691,7 +691,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "stop_sign",
-      "filename": "file://models/gre42/stop_sign/stop_sign.obj.gz",
+      "filename": "file://models/gre42/stop_sign/stop_sign.$mesh",
       "config": {
         "position": [0, 0, 0],
         "rotation": [0, 0, 0],
@@ -703,10 +703,10 @@
         "occluder_pass": "lightmap_black_local_instances",
         "aggregate_mode": "instances_sorted",
         "transformation_mode": "position_yangle",
-        "emissive_factor": "%vehicle_arena_emissive_factor",
-        "ambient_factor": "%vehicle_arena_ambient_factor",
-        "diffuse_factor": "%vehicle_arena_diffuse_factor",
-        "specular_factor": "%vehicle_arena_specular_factor",
+        "emissive_factor": "%default_emissive_factor",
+        "ambient_factor": "%default_ambient_factor",
+        "diffuse_factor": "%default_diffuse_factor",
+        "specular_factor": "%default_specular_factor",
         "shading": {
           "fog_distances": "%fog_distances",
           "fog_ambient": "%fog_ambient",
@@ -742,10 +742,10 @@
             "occluder_pass": "none",
             "aggregate_mode": "instances_sorted",
             "transformation_mode": "position_yangle",
-            "emissive_factor": "%vehicle_arena_emissive_factor",
-            "ambient_factor": "%vehicle_arena_ambient_factor",
-            "diffuse_factor": "%vehicle_arena_diffuse_factor",
-            "specular_factor": "%vehicle_arena_specular_factor",
+            "emissive_factor": "%default_emissive_factor",
+            "ambient_factor": "%default_ambient_factor",
+            "diffuse_factor": "%default_diffuse_factor",
+            "specular_factor": "%default_specular_factor",
             "shading": {
               "fog_distances": "%fog_distances",
               "fog_ambient": "%fog_ambient"
@@ -780,7 +780,7 @@
       "call": "obj_resource",
       "arguments": {
         "name": "%name",
-        "filename": "file://models/opengameart/Facade/$name.obj.gz",
+        "filename": "file://models/opengameart/Facade/$name.$mesh",
         "config": {
           "position": [0, 0, 0],
           "rotation": [0, 0, 0],
@@ -792,10 +792,10 @@
           "occluder_pass": "none",
           "aggregate_mode": "instances_sorted",
           "transformation_mode": "position_yangle",
-          "emissive_factor": "%vehicle_arena_emissive_factor",
-          "ambient_factor": "%vehicle_arena_ambient_factor",
-          "diffuse_factor": "%vehicle_arena_diffuse_factor",
-          "specular_factor": "%vehicle_arena_specular_factor",
+          "emissive_factor": "%default_emissive_factor",
+          "ambient_factor": "%default_ambient_factor",
+          "diffuse_factor": "%default_diffuse_factor",
+          "specular_factor": "%default_specular_factor",
           "shading": {
             "fog_distances": "%fog_distances",
             "fog_ambient": "%fog_ambient"
@@ -811,28 +811,28 @@
         "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_long",
-          "filename": "file://models/opengameart/Hedge/Long/HedgeLongExp.obj.gz"
+          "filename": "file://models/opengameart/Hedge/Long/HedgeLongExp.$mesh"
         }
       },
       {
         "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_small",
-          "filename": "file://models/opengameart/Hedge/Small/HedgeSmallExp.obj.gz"
+          "filename": "file://models/opengameart/Hedge/Small/HedgeSmallExp.$mesh"
         }
       },
       {
         "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_long_round",
-          "filename": "file://models/opengameart/Hedge/LongRound/HedgeLongRoundExp.obj.gz"
+          "filename": "file://models/opengameart/Hedge/LongRound/HedgeLongRoundExp.$mesh"
         }
       },
       {
         "playback": "_load_hedge",
         "arguments": {
           "name": "hedge_small_round",
-          "filename": "file://models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.obj.gz"
+          "filename": "file://models/opengameart/Hedge/SmallRound/HedgeSmallRoundExp.$mesh"
         }
       },
       { "playback": "_load_facade", "arguments": { "name": "entrance0" } },

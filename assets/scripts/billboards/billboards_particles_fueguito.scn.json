@@ -162,7 +162,7 @@
     "call": "obj_resource",
     "arguments": {
       "name": "fueguito_segment",
-      "filename": "file://models/trail_segment.obj.gz",
+      "filename": "file://models/trail_segment.$mesh",
       "config": {
         "position": [0, 0, -0.5],
         "rotation": [0, 0, 0],

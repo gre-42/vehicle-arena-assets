@@ -12,7 +12,7 @@
       "cache_filename": "file://$__APPDATA__/race_track0.cereal.binary",
       "heightmap": "file://$__DIR__/heightmap.png",
       "terrain_undefined_textures": ["file://textures/debug/pink.png"],
-      "terrain_grass_textures": ["#Ground037_dark27"],
+      "terrain_grass_textures": ["#Ground037_Sl"],
       "bounding_terrain_type": "grass",
       "default_terrain_type": "grass",
       "terrain_materials": {
@@ -153,10 +153,10 @@
       "terrain_edge_smoothness": 0.1,
       "driving_direction": "right",
       "blend_street": false,
-      "emissive_factor": "%vehicle_arena_emissive_factor",
-      "ambient_factor": "%vehicle_arena_ambient_factor",
-      "diffuse_factor": "%vehicle_arena_diffuse_factor",
-      "specular_factor": "%vehicle_arena_specular_factor",
+      "emissive_factor": "%default_emissive_factor",
+      "ambient_factor": "%default_ambient_factor",
+      "diffuse_factor": "%default_diffuse_factor",
+      "specular_factor": "%default_specular_factor",
       "fog_distances": "%fog_distances",
       "fog_ambient": "%fog_ambient"
     }
